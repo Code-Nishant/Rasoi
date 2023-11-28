@@ -5,6 +5,8 @@
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
     */
+
+
     --white: hsl(0, 0, 100%);
     --overlay-bg: hsla(0, 3%, 13%, 0.5);
 
@@ -150,5 +152,6 @@ input,
 button{display: black; }
 
 body {
-    background-color: var(--text-black-700);
+    background-color: var(--dark-background);
+    color: white;
 }
