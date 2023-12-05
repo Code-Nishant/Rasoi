@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
     <title>Rasoi</title>
-    <meta name="title" content="Discover your Taste">
+    <meta name="title" content="Rasoi - Discover your Taste">
     <meta name="description" content="Find the perfect Rasoi for you!">
 
     <!-- logo -->
     <link rel="logo" href="./img/logo.svg" type="img/svg">
+
+    <script src="/Rasoi/js/theme.js"></script>
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +31,15 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- custom js -->
+    <script src="./js/global.js" type="module"></script>
+    <script src="./js/home.js" type="module"></script>
+
+
 
 
 </head>
@@ -38,30 +49,33 @@
 
     <header class="header" data-header>
 
-        <a href="./img/logo.svg" class="logo">
-            <img src="/Rasoi/img/logo.svg" width="156" height="32" alt="Cook.io" class="logo-light">
-            <img src="/Rasoi/img/logo.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
+        <a href="/Rasoi/" class="logo">
+            <img src="/Rasoi/img/0f0866eb37895d74501edc38d1ff4f4d-hot-food-logo.png" width="70" height="32" alt="Rasoi"
+                class="logo-light">
+            <img src="/Rasoi/img/0f0866eb37895d74501edc38d1ff4f4d-hot-food-logo.png" width="70" height="32" alt="Rasoi"
+                class="logo-dark">
         </a>
 
         <nav class="navbar">
             <ul class="navbar-list">
-               <li>
-                <a href="/Rasoi/index.html" class="navbar-link title-small has-state active">Home</a>
-               </li>
+                <li>
+                    <a href="/Rasoi/" class="navbar-link title-small has-state active">Home</a>
+                </li>
 
-               <li>
-                <a href="./recipes.html" class="navbar-link title-small has-state">Recipes</a>
-               </li>
+                <li>
+                    <a href="./recipes.html" class="navbar-link title-small has-state">Recipes</a>
+                </li>
 
-               <li>
-                <a href="./cuisine.html" class="navbar-link title-small has-state">Cuisine</a>
-               </li>
+                <li>
+                    <a href="./cuisine.html" class="navbar-link title-small has-state">Cuisine</a>
+                </li>
 
             </ul>
         </nav>
 
         <button class="icon-btn theme-switch has-state" aria-pressed="false" aria-label="Toggle light and dark theme"
             data-theme-btn>
+
             <span class="material-symbols-outlined light-icon" aria-hidden="true">light_mode</span>
 
             <span class="material-symbols-outlined dark-icon" aria-hidden="true">dark_mode</span>
@@ -75,23 +89,91 @@
 
 
     </header>
+
+
+    <!-- mobile nav -->
+
+    <nav class="mobile-nav" aria-label="primary">
+        <ul class="nav-list">
+
+            <li class="nav-item">
+                <a href="./recipes.html" class="nav-link">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined" aria-hidden="true">lunch_dining</span>
+                    </span>
+
+                    <span class="lable-medium">Recipes</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link" aria-current="true">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined" aria-hidden="true">home</span>
+                    </span>
+
+                    <span class="lable-medium">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./cuisine.html" class="nav-link">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined">
+                            restaurant_menu
+                        </span>
+                    </span>
+
+                    <span class="lable-medium">Cuisine</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./saved-recipes.html" class="nav-link">
+                    <span class="item-icon">
+                        <span class="material-symbols-outlined" aria-hidden="true">book</span>
+                    </span>
+
+                    <span class="lable-medium">Saved</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <!-- hero -->
+
+            <section class="hero" aria-label="banner">
+                <div class="banner-card">
+                    <h1 class="display-large">Your desired dish?</h1>
+                    
+                    <div class="search-wrapper" data-search-form>
+                        <span class="material-symbols-outlined leading-icon" aria-hidden="true">brunch_dining</span>
+
+                        <input type="search" name="search" aria-label="Search recipes" placeholder=" Search recipes "
+                            class="search-field body-medium" data-search-field>
+
+                        <button class="search-submit" aria-label="Submit" data-search-btn>
+                            <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                        </button>
+
+
+                    </div>
+
+                        <p class="lable-medium">
+                            Search any recipe e.g: Biriyani, Pizza, Momos
+                        </p>
+                </div>
+
+            </section>
+        </article>
+    </main>
+
+
+
+
 </body>
-
-<!-- logo start -->
-<!-- logo end -->
-
-<!-- nav items start -->
-<!-- nav item end -->
-
-</nav>
-<!-- nav bar end -->
-
-<!-- main container start -->
-
-
-
-
-<!-- main container end -->
 
 <!-- footer starts -->
 <footer class="footer">
@@ -139,7 +221,7 @@
 </footer>
 <!-- footer end -->
 
-<script src="./script.js"></script>
+
 </body>
 
 </html>
