@@ -1,28 +1,33 @@
-import './App.css'
-import { useSelector, useDispatch } from 'react-redux'
-import { increment } from './store/counterSlice';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+
+//page importing
+import Home from "./Pages/Home/Home.jsx";
+import Recipes from "./Pages/Recipes/Recipes.jsx";
+import Favourities from "./Pages/Favourites/Favourities.jsx";
+import Cuisine from "./Pages/Cuisine/Cuisine.jsx";
+import About from "./Pages/About/About.jsx";
 
 function App() {
-  const dispatch= useDispatch();
-  const count=useSelector((state)=>{
-    return state.counter.value
-  })
-  console.log(count);
-
   return (
-    <div className="App bg-info">
-      COUNT- {count};
-      {/* <button onClick={()=> dispatch(increment())}></button> */}
-      <button className="btn btn-primary" type="submit" onClick={()=> dispatch(increment())}>Button</button>
+    <div className="app">
+      <div className="navbar"></div>
+
+      {/* routing of pages */}
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/recipes" element={<Recipes></Recipes>}></Route>
+          <Route path="/cuisine" element={<Cuisine></Cuisine>}></Route>
+          <Route path="/favourites"element={<Favourities></Favourities>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+        </Routes>
+      </div>
+
+      {/* footer */}
     </div>
-  )
+  );
 }
 
-export default App
-
-/*
-Arrow function
-syntax->   (para1,para2)=> _____
-            (state)
-*/
-
+export default App;
