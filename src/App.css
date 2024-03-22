@@ -2,5 +2,9 @@
     background-image: radial-gradient(circle, #931329, #74182c, #551b29, #361a22, #191617);
     height: 100vh;
     width: 100%;
-    color: #F0ECE3
+    color: #F0ECE3;
+
+    .page{
+        /* padding: 20px; */
+    }
 }

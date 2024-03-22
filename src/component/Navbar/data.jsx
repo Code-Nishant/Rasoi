@@ -6,7 +6,7 @@ import { GiHotMeal } from "react-icons/gi";
 import { IoMdHeart } from "react-icons/io";
 import { FaUserFriends } from "react-icons/fa";
 
-// import { SiCodechef } from "react-icons/si";
+
 
 export const dataItems = [
   {
