@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 *{
   margin: 0;
@@ -19,4 +20,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   /* background-image: radial-gradient(circle, #931329, #74182c, #551b29, #361a22, #191617); */
+ 
+}
+
+html{
+  scroll-behavior: smooth;
 }

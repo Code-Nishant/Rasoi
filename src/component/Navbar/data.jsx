@@ -1,9 +1,10 @@
 //importing icons
 import { FaHome } from "react-icons/fa";
-import { IoFastFoodOutline } from "react-icons/io5";
+
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { GiHotMeal } from "react-icons/gi";
-import { FaPortrait } from "react-icons/fa";
+import { IoMdHeart } from "react-icons/io";
+import { FaUserFriends } from "react-icons/fa";
 
 // import { SiCodechef } from "react-icons/si";
 
@@ -25,12 +26,12 @@ export const dataItems = [
   },
   {
     title: "Favourities",
-    icon: <IoFastFoodOutline />,
+    icon: <IoMdHeart/>,
     link: "/favourites",
   },
   {
     title: "About",
-    icon: <FaPortrait />,
+    icon: <FaUserFriends />,
     link: "/about",
   },
 ];

@@ -32,24 +32,27 @@
       /* border-bottom: 0.5px solid white;
       border-radius: 50px; */
       text-decoration: underline white;
+
+      .navItem:hover {
+        cursor: pointer;
+        color: white;
+
+        .icon {
+          flex: 30%;
+          display: grid;
+          place-items: center;
+
+          .title {
+            flex: 70%;
+          }
+        }
+      }
     }
   }
 }
 
-.navbar .navItems .navbar .navItems .navItem:hover {
-  cursor: pointer;
-  color: white;
-}
 
-.navbar .navItems .navItem .icon {
-  flex: 30%;
-  display: grid;
-  place-items: center;
-}
 
-.navbar .navItems .navItem .title {
-  flex: 70%;
-}
 
 .navbar .toggler {
   color: white;

@@ -6,6 +6,7 @@ import "./Navbar.scss";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 
+
 function Navbar() {
   const [icon, setIcon] = useState(false);
   return (
@@ -13,9 +14,7 @@ function Navbar() {
       {/* logo */}
       <div className="logo">
         <Link to={"/"} className="text-link">
-          <span>
-           
-          </span>
+          <span><b><i>Rasoi</i></b></span>
         </Link>
       </div>
 
