@@ -1,17 +1,30 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { dataItems } from "./data.jsx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.scss";
 import { SiCodechef } from "react-icons/si";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 
+
 function Navbar() {
-  const [icon, setIcon] = useState(false);
+  //state used for the decision of opening and closing of toggle navigation bar
+  const [hambuggerMenu, setHambuggerMenu] = useState(false);
+
+  //state used for the focus elements
+  const [focus,setFocus] = useState("home");
+  const handleFocus = function(value){
+    setFocus(value);
+    setHambuggerMenu(false);
+  }
+  useEffect(()=>{},[focus])
+  const location=useLocation();
+  const valClass=location.pathname.replace("/","")?location.pathname.replace("/",""):"home";
+
+
   return (
-    <div className={`navbar ${icon ? "" : "active"} container-fluid`}>
+    <div className={`navbar ${hambuggerMenu ? "" : "active"} container-fluid`}>
       {/* logo */}
       <div className="logo">
         <Link to={"/"} className="text-link">
@@ -28,12 +41,14 @@ function Navbar() {
           return (
             <div className="navItem" key={key}>
               <Link
-                className="title"
+                // className="title"
+                className={`navWrapper ${valClass ===value.class?"focus":""}`}
                 to={value.link}
                 style={{ color: "inherit", textDecoration: "inherit" }}
+                onClick={() => handleFocus(value.class)}
               >
                 <span className="icon">{value.icon}</span>
-                <span>{value.title}</span>
+                <span className="title">{value.title}</span>
               </Link>
             </div>
           );
@@ -54,10 +69,10 @@ function Navbar() {
       <div
         className="toggler"
         onClick={() => {
-          setIcon(!icon);
+          setHambuggerMenu(!hambuggerMenu);
         }}
       >
-        {icon ? <IoMdClose></IoMdClose> : <RxHamburgerMenu></RxHamburgerMenu>}
+        {hambuggerMenu ? <IoMdClose></IoMdClose> : <RxHamburgerMenu></RxHamburgerMenu>}
       </div>
 
     </div>

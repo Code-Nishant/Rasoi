@@ -36,43 +36,64 @@
     flex-direction: row;
 
     .navItem {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
       margin: 4px;
       padding: 0px 4px;
       font-size: large;
-      /* border-bottom: 0.5px solid white;
-      border-radius: 50px; */
-      text-decoration: underline white;
-
-      .navItem:hover {
-        cursor: pointer;
-        color: white;
+      position: relative;
+      .navWrapper {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
 
         .icon {
           flex: 30%;
           display: grid;
           place-items: center;
+        }
 
-          .title {
-            flex: 70%;
-          }
+        .title {
+          flex: 70%;
         }
       }
-      .title {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
+      .navWrapper.focus {
+        border-bottom: solid 3px white;
+        .icon {
+          color: white;
+        }
+        .title {
+          color: white;
+        }
       }
+    }
+    .navItem:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: solid 3px white;
+      transform: scaleX(0);
+      transition: transform 400ms ease-in-out;
+    }
+    .navItem:hover {
+      cursor: pointer;
+      .icon {
+        color: white;
+      }
+      .title {
+        color: white;
+      }
+    }
+    .navItem:hover:after {
+      transform: scaleX(1);
     }
   }
   .search-bar {
     margin-left: 40px;
-      margin-right: 40px;
+    margin-right: 40px;
     .form {
       display: flex;
       flex-direction: row;
@@ -93,15 +114,13 @@
       }
 
       .search-button {
-        .icon{
+        .icon {
           width: 20px;
           height: 20px;
         }
         // object-fit: cover;
       }
     }
-
-
   }
 }
 
