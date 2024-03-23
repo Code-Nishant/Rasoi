@@ -21,7 +21,7 @@ function App() {
       </div>
 
       {/* routing of pages */}
-      <div className="page container">
+      <div className="page ">
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/recipes" element={<Recipes></Recipes>}></Route>
