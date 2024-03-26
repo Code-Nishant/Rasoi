@@ -1,10 +1,14 @@
-import React from 'react'
-import "./Recipes.scss"
+import React from "react";
+import "./Recipes.scss";
 
 function Recipes() {
   return (
-    <div>Recipes</div>
-  )
+    <div className="recipes">
+      
+
+      
+    </div>
+  );
 }
 
-export default Recipes
+export default Recipes;
