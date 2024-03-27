@@ -17,11 +17,13 @@ function HeroBanner() {
 
       <div className="wrapper container">
         <div className="heroBannerContent">
-
           <span className="title">Rasoi: khana nhi zindagi ka swad</span>
 
           <span className="subTitle">
-          Easy recipes for every craving, every day. Simple ingredients, sensational flavors await. Embrace the joy of cooking, one dish at a time. Start your culinary journey with us today!
+            Step into our world of tasty wonders,easy recipes for every
+            craving,every day. Simple ingredients, sensational flavors await.
+            Embrace the joy of cooking, one dish at a time. Start your culinary
+            journey with us today!
           </span>
 
           <div className="searchInput">
@@ -33,7 +35,6 @@ function HeroBanner() {
             ></input>
             <button>Search</button>
           </div>
-          
         </div>
       </div>
     </div>
@@ -41,4 +42,3 @@ function HeroBanner() {
 }
 
 export default HeroBanner;
-
