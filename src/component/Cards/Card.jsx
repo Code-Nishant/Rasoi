@@ -34,15 +34,10 @@ function Card() {
         alt="img"
       />
       <div className="description">
-        <h3>Food 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          reiciendis quis harum fuga soluta nihil sapiente eaque dignissimos
-          repellendus aliquam? Quibusdam nulla sunt deleniti tenetur? Accusamus
-          maiores, odio, maxime eligendi labore nihil similique pariatur autem
-          magnam iste mollitia sint sunt dicta nesciunt quis numquam, facere
-          temporibus ad sapiente nulla eos.
-        </p>
+        <h4>Food 1 </h4>
+        
+        <h5>Indian</h5>
+        
       </div>
     </div>
   );
