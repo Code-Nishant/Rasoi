@@ -1,63 +1,111 @@
-.recipes {
-  margin: 0px;
+// .recipes {
+//   margin: 0px;
+//   padding: 0px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+
+//   .container {
+//     display: flex;
+
+//     .card {
+//       height: 500px;
+//       margin: 50px;
+//       box-shadow: 5px 5px 20px var(--main-offwhite);
+//       overflow: hidden;
+
+//       .card-hover {
+//         cursor: pointer;
+//       }
+//       .card-hover .description {
+//         height: 220px;
+//         bottom: 240px;
+//         background: black;
+//       }
+//       .card-hover p {
+//         opacity: 1;
+//         visibility: visible;
+//       }
+//       .card-hover img {
+//         transform: scale(1.1) rotate(-3edg);
+//       }
+//       img {
+//         height: 500px;
+//         width: 350px;
+//         border-radius: 3px;
+//         transition: 0.5s;
+//       }
+
+//       .description {
+//         height: 70px;
+//         width: 350px;
+//         padding: 6px;
+//         box-sizing: border-box;
+//         position: absolute;
+//         background-color: rgb(27, 27, 27, 0.5);
+//         color: var(--main-offwhite);
+//         bottom: 240px;
+//         transition: 0.5s;
+
+//         p {
+//           font-size: 20px;
+//           margin: 20px;
+//           visibility: hidden;
+//           opacity: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.card{
+  margin: 20px;
   padding: 0px;
+  height: 450px;
+  width: 300px;
   display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--main-offwhite);
+  color: var(--main-black);
+  box-shadow: 5px 5px 20px var(--main-offwhite);
+  border-radius: 3px;
+  
+  img{
+    height: 50%; 
+    width: 100%; 
+    object-fit: cover;
+    object-position: center;  
 
-  .container {
-    display: flex;
-
-    .card {
-      height: 500px;
-      margin: 50px;
-      box-shadow: 5px 5px 20px white;
-      overflow: hidden;
-
-      .card-hover{
-        cursor: pointer;
-      }
-      .card-hover .description{
-        height: 220px;
-        bottom: 240px;
-        background: black;
-
-      }
-      .card-hover p{
-        opacity: 1;
-        visibility: visible;
-      }
-      .card-hover img{
-        transform: scale(1.1) rotate(-3edg);
-      }
-      img {
-        height: 500px;
-        width: 350px;
-        border-radius: 3px;
-        transition: .5s;
-      }
-
-      .description{
-        height: 70px;
-        width: 350px;
-        padding: 6px;
-        box-sizing: border-box;
-        position: absolute;
-        background-color: rgb(27, 27,27,.5);
-        color: var(--main-offwhite);
-        bottom: 240px;
-        transition: .5s;
-
-        p{
-            font-size: 20px;
-            margin: 20px;
-            visibility: hidden;
-            opacity: 0;
-        }
+    &:hover{
+      transform: scale(1.1) rotate(-3deg);
     }
-    }
-   
-   
   }
+
+  .description{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+
+    h3{
+
+    }
+
+    p{
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+    &:hover{
+      background-color: var(--main-black);
+      color: var(--main-offwhite);
+      transition: 0.5s ease-in-out;
+    }
+  }
+ &:hover{
+  cursor: pointer;
+ } 
 }

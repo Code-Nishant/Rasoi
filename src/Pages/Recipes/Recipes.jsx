@@ -4,13 +4,9 @@ import Card from "../../component/Cards/Card";
 
 function Recipes() {
   return (
-    <div className="recipes">
+    <div className="recipes container">
       <Card></Card>
-      <Card></Card>
-
-      
-
-      
+      {/* <Card></Card> */}
     </div>
   );
 }
