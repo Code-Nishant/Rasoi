@@ -1,9 +1,12 @@
-import React from 'react'
-import "./Cuisine.scss"
+import React from "react";
+import Modal from "../../component/Modal/Modal.jsx";
+import "./Cuisine.scss";
 function Cuisine() {
   return (
-    <div>Cuisine</div>
-  )
+    <div className="cuisine">
+      <Modal />
+    </div>
+  );
 }
 
-export default Cuisine
+export default Cuisine;

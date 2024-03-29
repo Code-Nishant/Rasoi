@@ -2,6 +2,10 @@ import React from "react";
 import "./Recipes.scss";
 import Card from "../../component/Cards/Card";
 
+
+
+
+
 function Recipes() {
   
   return (
@@ -9,6 +13,7 @@ function Recipes() {
       <Card></Card>
 
     </div>
+
   );
 }
 
