@@ -7,14 +7,7 @@ function Recipes() {
   return (
     <div className="recipes container">
       <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-     
+
     </div>
   );
 }
