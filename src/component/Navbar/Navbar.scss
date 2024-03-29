@@ -1,13 +1,32 @@
 .navbar {
+  position: fixed;
+  transform: translateY(0);
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.2);
   height: 65px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  /* text-decoration: none; */
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 2px 10px rgb(0, 0, 0.15);
+  box-shadow: 2px 2px 10px var(--main-black);
+  transition: all ease 0.5s;
+  // z-index: 2;
+
+  &.top {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3.5px);
+    // -webkit-backdrop-filter: blur(3.5px);
+  }
+  &.show {
+    background-color: var(--main-black);
+  }
+  &.hide {
+    transform: translateY(-65px);
+    transition: all ease 0.5s;
+  }
+
+
 
   .logo {
     .text-link {
@@ -16,7 +35,7 @@
       text-decoration: none;
       // position: relative;
       font-size: xx-large;
-      color: aliceblue;
+      color: var(--main-offwhite);
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -27,7 +46,7 @@
         padding: 4px;
         font-family: "WindSong", cursive;
         font-weight: 500;
-        font-style: normal; 
+        font-style: normal;
       }
     }
   }

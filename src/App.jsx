@@ -11,6 +11,7 @@ import About from "./Pages/About/About.jsx";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound.jsx";
 
 import Navbar from "./component/Navbar/Navbar.jsx";
+import Footer from "./component/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       </div>
 
       {/* routing of pages */}
-      <div className="page ">
+      <div className="page">
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/recipes" element={<Recipes></Recipes>}></Route>
@@ -33,7 +34,9 @@ function App() {
       </div>
 
       {/* footer */}
-      <div className="footer"></div>
+      <div className="footer container-fluid">
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
