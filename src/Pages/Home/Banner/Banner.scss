@@ -1,7 +1,7 @@
 .banner {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 70%;
+  width: 75%;
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -11,6 +11,12 @@
   background-color: var(--main-black);
   opacity: 80%;
   border-radius: 20px;
+  box-shadow: -5px 0px 20px var(--main-black), 
+                5px 0px 20px var(--main-black),  
+                0px 5px 20px var(--main-black),  
+                0px -5px 20px var(--main-black);
+  // backdrop-filter: blur(3.5px);
+
 
   .dataitem {
     margin: 5px 10px;
