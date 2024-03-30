@@ -18,6 +18,7 @@ const MyModal = ({ closeModal }) => {
           inventore id libero in animi odio officiis dolor incidunt fuga quis
           quaerat earum praesentium, sunt exercitationem, molestiae repellendus
           dolores laudantium voluptates.
+          lorem500
         </p>
         <button className="modal-btn" onClick={closeModal}>
           Previous
