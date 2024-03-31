@@ -1,11 +1,11 @@
 import React from "react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+
 import "./Recipes.scss";
 import Card from "../../component/Cards/Card";
 
 import TopBanner from "./TopBanner/TopBanner";
 
-import SwiperAutoplay from "../Cuisine/SwiperAutoplay.jsx";
+import SwiperAutoplay from "../Cuisine/SwiperAutoplay/SwiperAutoplay.jsx";
 import SwiperEffect from "../../component/Swiper/SwiperEffect";
 
 function Recipes() {
@@ -14,7 +14,7 @@ function Recipes() {
       <TopBanner className="container-fluid" />
 
       <h4>What will be for dinner today?</h4>
-      <SwiperEffect />
+      
       <Card></Card>
       <h5>trending food recipe</h5>
       <SwiperAutoplay />
