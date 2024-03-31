@@ -17,7 +17,8 @@ function HeroBanner() {
 
       <div className="wrapper container">
         <div className="heroBannerContent">
-          <span className="title">Rasoi: khana nhi zindagi ka swad</span>
+          <span className="title">
+            Rasoi: khana nhi zindagi ka swad </span>
 
           <span className="subTitle">
             Step into our world of tasty wonders,easy recipes for every

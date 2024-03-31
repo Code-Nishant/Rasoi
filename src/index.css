@@ -16,6 +16,11 @@
   -moz-osx-font-smoothing: grayscale; */
   /* color code */
 
+  span{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+  }
+
   --main-black:#191617 ;
   --main-red: #931329;
   --main-offwhite:#F0ECE3;

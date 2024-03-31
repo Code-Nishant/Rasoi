@@ -9,13 +9,14 @@ export const dataItem=[
         title: "Biscuits",
         link: "",
         class:"biscuits",
-        imagePath:"https://p7.hiclipart.com/preview/194/352/29/bundt-cake-bakery-cupcake-mousse-mold-a-big-plate-of-biscuits.jpg"
+        imagePath:"https://as2.ftcdn.net/v2/jpg/02/18/49/61/1000_F_218496165_f7DE0BPYbTkMUNq6vfb34sgaDooX3JpY.jpg"
+        // https://as2.ftcdn.net/v2/jpg/02/18/49/61/1000_F_218496165_f7DE0BPYbTkMUNq6vfb34sgaDooX3JpY.jpg
     },
     {
-        title: "Desserts",
+        title: "Sweets",
         link: "",
         class:"sweet",
-        imagePath:"https://amazingksa.com/wp-content/uploads/2023/09/00bca9d12cd7bf398f10cd14c420abcf.jpg"
+        imagePath:"https://img.freepik.com/premium-photo/indian-sweet-food-gulab-jamun-served-round-ceramic-bowl_466689-71909.jpg"
     },
     {
         title: "Salad",
@@ -39,7 +40,7 @@ export const dataItem=[
         title: "Pancakes",
         link: "",
         class:"pancake",
-        imagePath:"https://shop.nutrifoodz.co/cdn/shop/products/PANCAKE-3_jpg_1_1000x1000_crop_center.jpg?v=1670242178"
+        imagePath:"https://www.thespruceeats.com/thmb/PWWRHrrsPir_OFkwLJUIVNJ9kXM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/BlueberryLemonRicottaPancakes-LeahMaroney-5c0fb000c9e77c0001e0c50b.jpg"
     },
     {
         title: "Ice-Cream",
