@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { data } from "./data";
 import "./Card_one.scss";
-// import Modal from "../../Modal";
+import ShowModal from "../../Modal/ShowModal.jsx"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 function CardOne() {
   const settings = {
@@ -13,28 +14,27 @@ function CardOne() {
     slidesToShow: 4,
     slidesToScroll: 1,
   };
+
+  const [open, setOpen]=useState(false);
+
+
   return (
-    <div className="cardmain w-3/4">
-      <Slider {...settings}>
+    <div className="cardOne container">
+      <Slider {...settings} className="slider">
         {data.map((d) => (
-          <div key={d.id} className="bg-white h-[450px] text-black rounded-xl">
-            <div className="h-56 flex justify-center items-center rounded-t-xl">
-              <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
+          <div key={d.id} className="item rounded-xl">
+            <div className="layer rounded-t-xl">
+              <img src={d.img} alt=""/>
             </div>
 
-            <div
-              className="
-              flex
-              flex-col
-              items-center
-              justify-center
-              gap-4
-              p-4"
-            >
+            <div className="description">
               <p className="text-xl font-semibold">{d.name}</p>
               <p>{d.description}</p>
-              {/* <Modal /> */}
+              <button className='btn btn-primary bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl' onClick={()=>{setOpen(true)}}>Read More</button>
             </div>
+
+            {open && <ShowModal />}
+            <ShowModal/>
           </div>
         ))}
       </Slider>
