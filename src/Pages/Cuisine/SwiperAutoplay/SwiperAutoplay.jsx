@@ -14,7 +14,8 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 export default function SwiperAutoplay() {
   return (
-    <div className="swiperAutoplay">
+    <div className="swiperAutoplay container-fluid">
+      
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
