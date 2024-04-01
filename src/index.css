@@ -19,15 +19,16 @@
   .bttn {
     padding: 10px 20px;
     border: none;
-    border-radius: 25px; /* Updated to match the border radius */
-    background: linear-gradient(45deg, #FFC107, #FF9800); /* Gradient background */
+    border-radius: 25px;
+    background: linear-gradient(45deg, #FFC107, #FF9800); 
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
 
     &:hover {
-      background: linear-gradient(45deg, #FF9800, #FFC107); /* Adjust gradient for hover effect */
+      background: linear-gradient(45deg, #FF9800, #FFC107); 
+      
     }
   }
 
