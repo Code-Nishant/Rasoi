@@ -1,49 +1,93 @@
-.topBanner{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 75px ;
-    padding: 50px;
+.topBanner {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 75px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+
+  .layer-1 {
     display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.09);
-    border-radius: 20px;
+    flex-direction: row;
+    gap: 30px;
+    .main {
+      margin-right: 100px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-    .layer-1{
-        display: flex;
-        flex-direction: row;
-        gap:30px;
-        .main{
-            margin-right: 100px;
-            margin-left: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+      .title {
+        padding-bottom: 10px;
+      }
 
-            .title{
-                padding-bottom: 10px;
-            }
-            
-            .description{
-                padding-top: 10px;
+      .description {
+        padding-top: 10px;
 
-                p{
-                    margin: 0;
-                    letter-spacing: 2.5px;
-                }
-                
-            }
+        p {
+          margin: 0;
+          letter-spacing: 2.5px;
         }
-        .image{
-            margin-left: 100px;
-            img{
-                height: 350px;
-                width: 450px;
-            }
-        }
+      }
     }
+    .image {
+      margin-left: 100px;
+      img {
+        height: 350px;
+        width: 450px;
+      }
+    }
+  }
 
-    .layer-2{
-        display: flex;
-        flex-direction: row;
+  .layer-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .search-box {
+      position: relative;
+      margin-right: 20px;
+
+      input[type="search"] {
+        width: 600px; /* Initial width for full-size screen */
+        max-width: 100%; /* Allow the search box to shrink as needed */
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      input[type="search"]:focus,
+      input[type="search"]:hover {
+        border-color: #000;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Search icon */
+      &::after {
+        content: "\1F50D";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #aaa;
+      }
     }
+  }
+
+  /* Media query for smaller screen sizes */
+  @media screen and (max-width: 768px) {
+    .layer-2 {
+      .search-box {
+        input[type="search"] {
+          width: 100%; /* Set width to 100% for smaller screens */
+          max-width: 300px; /* Adjust max-width for smaller screens */
+        }
+      }
+    }
+  }
 }

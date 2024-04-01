@@ -1,52 +1,70 @@
 .exploreRecipe {
-  margin-top: 40px;
-  margin-left: 0px;
-  margin-right: 260px;
-  padding: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  // width: 80%;
-  background-color: rgba(255, 255, 255, 0.09);
-
-  .inner {
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 260px;
     padding: 0;
     display: flex;
-    flex-direction: row;
-    color: var(--main-back);
-    // background-color: var(--main-offwhite);
-
-    .image{
+    align-items: flex-start;
+    justify-content: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.09);
+  
+    .inner {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      color: var(--main-back);
+  
+      .image {
         padding-left: 200px;
         padding-top: 50px;
         padding-bottom: 50px;
-        img{
-            height: 300px;
-            width: 350px;
+  
+        img {
+          height: 300px;
+          width: 350px;
         }
-    }
-    .main{
+      }
+  
+      .main {
         padding-left: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
-
-        .title{
-            padding: 10px 0;
+  
+        .title {
+          padding: 10px 0;
         }
-        .decription{
-            margin-right: 100px;
-            p{
-            
+  
+        .decription {
+          margin-right: 100px;
+  
+          p {
+            // Add any specific styling for the description text if needed
+          }
+        }
+  
+        .btn {
+          margin-top: 20px;
+  
+          button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #FFC107, #FF9800);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+  
+            &:hover {
+              background: linear-gradient(45deg, #FF9800, #FFC107);
             }
+          }
         }
-        .btn{
-            padding: 0;
-            margin: 0;
-        }
+      }
     }
   }
-}
+  

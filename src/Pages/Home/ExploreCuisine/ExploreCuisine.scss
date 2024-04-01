@@ -1,18 +1,13 @@
 .exploreCuisine {
   margin-top: 40px;
-  //   margin-left: 0px;
-  //   margin-right: 260px;
   margin-left: 260px;
   margin-right: 0px;
   padding: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  //   border-top-right-radius: 25px;
-  //   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  // width: 80%;
   background-color: rgba(255, 255, 255, 0.09);
 
   .inner {
@@ -20,17 +15,18 @@
     display: flex;
     flex-direction: row;
     color: var(--main-back);
-    // background-color: var(--main-offwhite);
 
     .image {
       padding-right: 200px;
       padding-top: 50px;
       padding-bottom: 50px;
+
       img {
         height: 300px;
         width: 350px;
       }
     }
+
     .main {
       padding-left: 200px;
       display: flex;
@@ -41,14 +37,32 @@
       .title {
         padding: 10px 0;
       }
-      .decription {
+
+      .description {
         margin-right: 100px;
+
         p {
+          // Add any specific styling for the description text if needed
         }
       }
+
       .btn {
-        padding: 0;
-        margin: 0;
+        margin-top: 20px;
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 25px; /* Updated to match the border radius */
+          background: linear-gradient(45deg, #FFC107, #FF9800); /* Gradient background */
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+
+          &:hover {
+            background: linear-gradient(45deg, #FF9800, #FFC107); /* Adjust gradient for hover effect */
+          }
+        }
       }
     }
   }
