@@ -1,6 +1,11 @@
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { hide } from "../../store/modalSlice";
 
 const MyModal = ({ closeModal }) => {
+  
+  const dispatch=useDispatch();
+
   useEffect(() => {
     document.body.style.overflowY = "hidden";
     return () => {
@@ -10,7 +15,8 @@ const MyModal = ({ closeModal }) => {
 
   return (
     <>
-      <div className="modal-wrapper" onClick={closeModal}></div>
+      {/* <div className="modal-wrapper" onClick={closeModal}></div> */}
+      <div className="modal-wrapper" onClick={()=>dispatch(hide())}></div>
       <div className="modal-container">
         <h2>Modal page</h2>
         <p>
@@ -20,7 +26,8 @@ const MyModal = ({ closeModal }) => {
           dolores laudantium voluptates.
           lorem500
         </p>
-        <button className="modal-btn" onClick={closeModal}>
+        {/* <button className="modal-btn" onClick={closeModal}> */}
+        <button className="modal-btn" onClick={()=>dispatch(hide())}>
           Previous
         </button>
       </div>

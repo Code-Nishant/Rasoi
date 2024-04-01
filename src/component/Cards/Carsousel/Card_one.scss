@@ -1,12 +1,4 @@
 .cardOne {
-  width:75%;
-  .slick-slider{
-    
-    .slick-list{
-      // height: 200px;
-    }
-
-  }
   .slick-slide {
     > div {
       margin: 0 10px;
@@ -14,8 +6,9 @@
   }
   .slider{
     .item{
+      z-index: 0;
       background-color: white;
-      height: 350px;
+      height: 400px;
       color: black;
 
       .layer{

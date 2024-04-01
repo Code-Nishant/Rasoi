@@ -1,10 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from "@reduxjs/toolkit";
 
 //importing reducer function
-import counterReducer from "./counterSlice"
+import counterReducer from "./counterSlice";
+import modalReducer from "./modalSlice";
 
 export default configureStore({
   reducer: {
-    counter: counterReducer
+    counter: counterReducer,
+    
+    modal: modalReducer,
   },
-})
+});

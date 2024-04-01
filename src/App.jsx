@@ -20,7 +20,7 @@ function App() {
       <div className="navBar">
         <Navbar></Navbar>
       </div>
-
+      
       {/* routing of pages */}
       <div className="page">
         <Routes>

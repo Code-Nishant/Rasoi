@@ -1,13 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { data } from "./data";
 import "./Card_one.scss";
 import ShowModal from "../../Modal/ShowModal.jsx"
+import Modal from "../../Modal/Modal.jsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useDispatch, useSelector } from "react-redux";
+import { show } from "../../../store/modalSlice.js";
 
 function CardOne() {
+
+  const val= useSelector(state=> state.modal);//incomming of state from redux store directly
+  const dispatch=useDispatch();//outgoing of state from redux store directly
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -15,29 +21,24 @@ function CardOne() {
     slidesToScroll: 1,
   };
 
-  const [open, setOpen]=useState(false);
-
-
   return (
     <div className="cardOne container">
       <Slider {...settings} className="slider">
-        {data.map((d) => (
-          <div key={d.id} className="item rounded-xl">
+        {data.map((d,key) => (
+          <div key={key} className="item rounded-xl">
             <div className="layer rounded-t-xl">
               <img src={d.img} alt=""/>
             </div>
 
             <div className="description">
-              <p className="text-xl font-semibold">{d.name}</p>
+              <h4 className="text">{d.name}</h4>
               <p>{d.description}</p>
-              <button className='btn btn-primary bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl' onClick={()=>{setOpen(true)}}>Read More</button>
+              <button className='bttn' onClick={()=>dispatch(show())}>Read More</button>
             </div>
-
-            {open && <ShowModal />}
-            <ShowModal/>
           </div>
         ))}
       </Slider>
+        {val.value && <ShowModal />}
     </div>
   );
 }
