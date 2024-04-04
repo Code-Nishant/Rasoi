@@ -1,4 +1,5 @@
 .footer{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,16 +7,21 @@
     color: var(--main-o=Offwhite);
 
     .heading{
-        display: flex;
-        flex-direction: row;
-
+        // margin: 10px;
+        // padding: 2 ;
     }
+
     .footerItems{
         display: flex;
+        padding: 0 30px;
+        padding-bottom: 10px;
         flex-direction: row;
+        border-bottom: 0.5px solid var(--main-offwhite);
+        gap: 30px;
         .footerItem{
+            letter-spacing: 1px;
+            font-size: small;
             padding: 0 10px;
-
             &:hover{
                 color: var(--main-red);
                 cursor: pointer;
@@ -23,10 +29,23 @@
         }
     }
     .logos{
+        margin-top: 10px;
+        padding: 10px 10px;
+        border: 0.5px solid var(--main-offwhite);
+        border-radius: 20px;
+        gap: 30px;
         display: flex;
         flex-direction: row;
+
+    
         .logo{
-            padding: 0 10px;
+            
+            svg{
+                width: 25px;
+                height: 25px;
+
+                
+            }
             &:hover{
                 color: var(--main-red);
                 cursor: pointer;
@@ -34,13 +53,43 @@
         }
     }
     .searchFeed{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+        // width: 0%;
+        input{
+            // width:800px ;
+            background-color: var(--main-offwhite);
+            outline: 0;
+            border: 0;
+            color: var(--main-offwhite);
+            width: 300px;
+            height: 40px;
+            border-radius: 20px 0 0 20px;
+            padding: 0 10px;
+        }
+        button{
+            color: var(--main-black);
+            background-color: var(--main-offwhite);
+            border-radius:0 20px 20px 0px ;
+            height: 40px;
+            width: 100px;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+        }
 
     }
     .bottomTagLine{
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
         gap: 4px;
         justify-content: center;
-        
+        align-self: center;
     }
 }

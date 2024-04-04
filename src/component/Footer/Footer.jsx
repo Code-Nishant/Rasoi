@@ -5,13 +5,13 @@ import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa";
-import { FaRegCopyright } from "react-icons/fa";
+import { IoMdSearch } from "react-icons/io";
 
 function Footer() {
   return (
     <div className="footer container">
       <div className="heading">
-        <h2>Rasoi</h2>
+        <h3>Rasoi</h3>
       </div>
       <div className="footerItems">
         <div className="footerItem">Terms and Conditions</div>
@@ -36,6 +36,8 @@ function Footer() {
       </div>
       <div className="searchFeed">
         <input type="text" placeholder="Sign-up for weekly NewsPaper"></input>
+        <button>Subscribe</button>
+
       </div>
 
       <div className="bottomTagLine">
