@@ -1,11 +1,11 @@
 .simpleRatingCard{
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     width: 300px;
     height: fit-content;
     border-radius: 20px;
@@ -17,6 +17,15 @@
         width: 80px;
         background-color: var(--main-offwhite);
         border-radius: 50px;
+    }
+
+    .userName{
+        margin: 0;
+
+        h6{
+            margin: 0;
+            color: var(--main-black);
+        }
     }
 
     .stars{
@@ -40,6 +49,8 @@
 
         p{
             margin: 0;
+            word-break: break-all;
+
         }
     }
 }

@@ -10,6 +10,9 @@ function SimpleRatingCard({item}) {
         <div className="profileImage">
             <img src={item.image} alt="" />
         </div>
+        <div className="userName">
+            <h6>{item.name}</h6>
+        </div>
         <div className="stars">
             <div className="star">
                 {item.star>=1?<MdOutlineStarPurple500 />:<MdOutlineStarOutline />}
