@@ -13,7 +13,6 @@ const Gallery = () => {
 
   return (
     <div>
-      
       {/* <div className="menu-tab container">
         <div className="menu-tab d-flex justify-content-around">
           <button className="bttn">Breakfast</button>
@@ -27,7 +26,8 @@ const Gallery = () => {
           <div className="col-11 mx-auto">
             <div className="col">
               {items.map((element, key) => {
-                const {id,image,name,description,category,dishType} = element;
+                const { id, image, name, description, category, dishType } =
+                  element;
                 return (
                   <div
                     key={key}
@@ -39,20 +39,21 @@ const Gallery = () => {
                           src={element.image}
                           alt="img"
                           className="img-fluid"
+                          style={{
+                            borderRadius: "100%",
+                            overflow: "hidden",
+                          }}
                         />
                       </div>
                       {/* menu */}
                       <div className="col-12 col-md-12 col-lg-8">
                         <div className="main-title pt-4 pb-3">
                           <h3>{name}</h3>
-                          <p>{description}
-                          </p>
+                          <p>{description}</p>
                         </div>
                         <div className="dish-type">
                           <div className="dish-type-inner d-flex justify-content-between">
-                            <p>
-                              {dishType}
-                            </p>
+                            <p>{dishType}</p>
                             <button
                               className="bttn"
                               onClick={() => dispatch(show())}
