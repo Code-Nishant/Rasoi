@@ -1,0 +1,34 @@
+  .cuisine{
+
+
+
+    .secContainer {
+      padding-top: 2rem;
+
+
+      .secHeader {
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .textDiv {
+            .secTitle{
+              
+                padding-bottom: .5rem;
+                color: var(--main-offwhite);
+                line-height: 1.5rem;
+                
+            }
+            p{
+              font-size: 13px;
+              font-weight: 500;
+            }
+        }
+        .iconsDiv{
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+

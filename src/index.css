@@ -15,6 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   /* color code */
+  scroll-behavior: smooth;
 
   .bttn {
     padding: 10px 20px;
