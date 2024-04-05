@@ -12,25 +12,29 @@ function Recipes() {
     <div className="recipes">
       <TopBanner className="container-fluid" />
       <hr />
-      <h5 className="mt-6 text-center main heading">Explore Recipes</h5>
+      <h5 className="mt-6 text-center main heading">Trending Recipes</h5>
       <hr />
       <Card_one />
-
       <hr />
-      <h5 className="mt-6 text-center main heading">Explore Recipes</h5>
+      <h5 className="mt-6 text-center main heading">5-mins Recipes</h5>
       <hr />
-
       <Gallery />
+
       <hr />
-      <h5 className="mt-6 text-center main heading">Explore Recipes</h5>
+      <h5 className="mt-6 text-center main heading">Good Morning</h5>
+      <hr />
+
+      <Card_one />
+      <hr />
+      <h5 className="mt-6 text-center main heading">It's Lunch time</h5>
       <hr />
       <Card_one />
       <hr />
-      <h5 className="mt-6 text-center main heading">Explore Recipes</h5>
+      <h5 className="mt-6 text-center main heading">Ready for Snacks</h5>
       <hr />
       <Card_one />
       <hr />
-      <h5 className="mt-6 text-center main heading">Explore Recipes</h5>
+      <h5 className="mt-6 text-center main heading">Family time - Dinner time</h5>
       <hr />
       <Card_one />
 
