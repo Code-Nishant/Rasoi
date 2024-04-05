@@ -1,0 +1,45 @@
+.simpleRatingCard{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    border: 1px solid var(--main-black);
+    background-color: rgba(255, 255, 255, 0.09);
+
+    .profileImage{
+        height: 80px;
+        width: 80px;
+        background-color: var(--main-offwhite);
+        border-radius: 50px;
+    }
+
+    .stars{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .star{
+            
+            svg{
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+    .description{
+        font-size: medium;
+        text-align: center;
+
+        p{
+            margin: 0;
+        }
+    }
+}
