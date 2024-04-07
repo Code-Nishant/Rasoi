@@ -4,9 +4,6 @@ import { dataItem } from "./data";
 import { Link } from "react-router-dom";
 
 function Banner() {
-  {
-    console.log(dataItem);
-  }
 
   return (
     <div className="banner">

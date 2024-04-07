@@ -10,7 +10,7 @@ const TYPE="public";
 const fetchDataFromApi=async ()=>{
     try {
         const {data}=await axios.get(BASE_URL+"?type="+TYPE+"&q=monos"+"&app_id="+APPLICATION_ID+"&app_key="+APPLICATION_kEY);
-        console.log(data);
+        // console.log(data);
         return data;
     } catch (error) {
         console.log(error)

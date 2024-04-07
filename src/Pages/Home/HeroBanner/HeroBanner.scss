@@ -14,6 +14,9 @@
     //     height: 700px;
     // }
 
+    .row{
+        margin: 0;;
+    }
     
     .backdrop-img{
         width: 100%;
@@ -57,7 +60,7 @@
             // animation: fadeIn 3s;
     
             .title{
-                font-size: 50px;
+                font-size: 35px;
                 font-weight: 700;
                 margin-bottom: 10px;
     
@@ -67,18 +70,23 @@
             }
 
             .subTitle{
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 500;
                 margin-bottom: 40px;
                 // width: ;
+                display: none;
                 @include md{
                     font-size: 24px;
+                }
+                @include sm{
+                    font-size: 20px;
+                    display: block;
                 }
             }
             .searchInput{
                 display: flex;
                 align-items: center;
-                width: 50%;
+                // width: 50%;
         
                 input{
                     width: calc(100% - 100px);
