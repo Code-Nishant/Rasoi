@@ -4,57 +4,70 @@
       margin: 0 10px;
     }
   }
-  .slider{
-    .item{
+  .slider {
+    .item {
       z-index: 0;
       background-color: white;
       height: 370px;
       color: black;
       border-radius: 20px;
-       border-radius: 20px;
-      transition: background-color 0.3s ease; 
+      transition: background-color 0.3s ease;
       cursor: pointer;
-      
-      
 
-      .layer{
+      .layer {
         height: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
 
-        img{
-          height: 100px; 
-          width: 100px; 
+        img {
+          height: 100px;
+          width: 100px;
           border-radius: 50%;
 
           &:hover {
-            transform: scale(1.1); 
+            transform: scale(1.1);
           }
         }
       }
 
-      .description{
+      .description {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 4px;
         padding: 4px;
-        p{
+        p {
           text-align: center;
         }
-        
-        
       }
+
       &:hover {
         background-color: rgba(0, 0, 0, 0.5);
-        // background-color: rgba(150, 150, 150, 0.5);  
-        color: white; 
+        color: white;
       }
-      
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .slider {
+      .item {
+        height: auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .slider {
+      .item {
+        height: auto;
+        .layer img {
+          height: 80px;
+          width: 80px;
+        }
+      }
     }
   }
 }
-
