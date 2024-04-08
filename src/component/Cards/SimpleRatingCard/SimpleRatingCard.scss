@@ -62,3 +62,14 @@
         transform: scale(1.05);
     }
 }
+@media only screen and (max-width: 770px) {
+    .simpleRatingCard{
+        width: 250px;
+    }
+}
+
+// @media only screen and (max-width: 640px) {
+//     .simpleRatingCard{
+//         width: 250px;
+//     }
+// }

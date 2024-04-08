@@ -22,7 +22,11 @@ function CardOne() {
       const containerWidth = sliderRef.current.offsetWidth;
       if (containerWidth < 426) {
         setSlidesToShow(1);
-      } else if (containerWidth < 768) {
+      } 
+      else if (containerWidth < 620) {
+        setSlidesToShow(2);
+      }
+      else if (containerWidth < 768) {
         setSlidesToShow(3);
       } else if (containerWidth < 1026) {
         setSlidesToShow(4);
