@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HeroBanner.scss";
 import useFetch from "../../../hooks/useFetch";
-import img from "../../../assets/Image/HeroBannerSection/2.jpg"
+import img from "../../../assets/Image/HeroBannerSection/5.jpg"
 
 function HeroBanner() {
   // const {data,loading, err} = useFetch();
