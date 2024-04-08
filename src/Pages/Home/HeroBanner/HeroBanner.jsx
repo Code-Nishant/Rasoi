@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HeroBanner.scss";
 import useFetch from "../../../hooks/useFetch";
+import img from "../../../assets/Image/HeroBannerSection/2.jpg"
 
 function HeroBanner() {
   // const {data,loading, err} = useFetch();
@@ -15,7 +16,8 @@ function HeroBanner() {
 
       <div className="backdrop-img">
         <img
-          src="https://wallpaperbat.com/img/8943620-free-ai-art-image-of-kitchen-vitality.jpg"
+          src={img}
+          // "https://wallpaperbat.com/img/8943620-free-ai-art-image-of-kitchen-vitality.jpg"
           alt="herobanner wallpaper"
         />
       </div>

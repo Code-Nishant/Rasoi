@@ -1,35 +1,52 @@
 import React from "react";
 import SwiperAutoplay from "./SwiperAutoplay/SwiperAutoplay.jsx";
 import Modal from "../../component/Modal/Modal.jsx";
-import { BsArrowLeftShort } from "react-icons/bs";
-import { BsArrowRightShort } from "react-icons/bs";
+import Card_one from "../../component/Cards/Carsousel/Card_one.jsx";
+
 import "./Cuisine.scss";
+
 const Cuisine = () => {
   return (
-   <section className="cuisine">
-    <SwiperAutoplay />
-    <div className="secContainer">
-      <div className="secHeader">
-        <div className="textDiv">
-          <h2 className="secTitle">Explore Cuisines
-          </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ut nesciunt dolore? Harum obcaecati quia commodi voluptatem, ipsa quidem nesciunt temporibus eos illum minima, vero ipsum alias blanditiis veniam repellendus?
+    <div className="cuisine">
+      <SwiperAutoplay />
+      <section className="main">
+        <hr />
+        <h5 className="mt-6 text-left main heading">Indian Cuisine</h5>
+        <hr />
 
-          </p>
-        </div>
-        <div className="iconsDiv">
-        <BsArrowLeftShort className="icon" />
-        <BsArrowRightShort className="icon" />
+        <Card_one />
 
-        </div>
-      </div>
-      <div className="mainContent">
-
-      </div>
+        <hr />
+        <h5 className="mt-6 text-left main heading">American Cuisine</h5>
+        <hr />
+        <Card_one />
+        <hr />
+        <h5 className="mt-6 text-left main heading">Asian Cuisine</h5>
+        <hr />
+        <Card_one />
+        <hr />
+        <h5 className="mt-6 text-left main heading">Chinese Cuisine</h5>
+        <hr />
+        <Card_one />
+        <hr />
+        <h5 className="mt-6 text-left main heading">French Cuisine</h5>
+        <hr />
+        <Card_one />
+        <hr />
+        <h5 className="mt-6 text-left main heading">Italian Cuisine</h5>
+        <hr />
+        <Card_one />
+        <hr />
+        <h5 className="mt-6 text-left main heading">Japanese Cuisine</h5>
+        <hr />
+        <Card_one />
+        <hr />
+        <h5 className="mt-6 text-left main heading">Mexican Cuisine</h5>
+        <hr />
+        <Card_one />
+      </section>
     </div>
-
-   </section>
   );
-}
+};
 
 export default Cuisine;

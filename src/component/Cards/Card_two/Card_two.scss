@@ -1,0 +1,197 @@
+.card_two{
+
+
+    .secContainer {
+        padding-top: 2rem;
+        margin: 20px;
+  
+  
+        .secHeader {
+  
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+  
+          .textDiv {
+              .secTitle{
+                
+                  padding-bottom: .5rem;
+                  color: var(--main-offwhite);
+                  line-height: 1.5rem;
+                  
+              }
+              p{
+                font-size: 13px;
+                font-weight: 500;
+              }
+          }
+          .iconsDiv{
+            
+            color: var(--main-offwhite);
+  
+              .icon{
+              
+                padding: .5rem;
+                gap: 2rem;
+                
+                background: linear-gradient(to right, #FF5733, #FFD633); 
+  
+                border-radius: 50%;
+                font-size: 2.5rem;
+                &:hover{
+                  background: var(--main-black);
+                  color: var(--main-offwhite);
+                }
+              }
+              .leftIcon{
+                background: var(--main-black);
+                color: var(--main-offwhite);
+  
+                &:hover{
+                  background: linear-gradient(to right, #FF5733, #FFD633); 
+                  color: var(--main-black);
+  
+                }
+                
+              }
+          }
+        }
+        .mainContent{
+          margin: 20px;
+          padding: 2rem 0;
+          gap: 1rem;
+  
+          .foodItem1{
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px 2px rgb(178, 178, 178 ,0.45);
+  
+            width: 30%;
+           
+  
+            .foodImg{
+              height: 200px;
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+  
+              img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
+              .info{
+                position: absolute;
+                display: flex;
+                align-items: flex-start;
+                padding: 0;
+                // padding: 1rem 1.5rem;
+                justify-content: center;
+                flex-direction: column;
+                background: linear-gradient(rgb(0,0,0,0.846),rgb(0,0,0,0.759));
+                bottom: 0;
+                width: 100%;
+                // height: 100%;
+                height: 0;
+  
+                overflow: hidden;
+  
+                h5{
+                  color: var(--main-offwhite);
+                  font-weight: 600;
+  
+                }
+                p{
+                  color: var(--main-offwhite);
+                  opacity: .7;
+                  font-size: 13px;
+  
+                }
+                .icon{
+                  position: absolute;
+                  right: 10px;
+                  bottom: 10px;
+                  padding: .5rem;
+                  font-size: 2.5rem;
+                  border-radius: 50%;
+                  background: linear-gradient(to right, #FF5733, #FFD633); 
+                  color: var(--main-black);
+                  border:1px solid transparent;
+                  transition: .3s ease;
+  
+                  &:hover{
+                    background: var(--main-black);
+                    border:1px solid var(--main-offwhite);
+                    color:#FFD633;
+                  }
+  
+                }
+              }
+            }
+            .foodFooter{
+              padding: 1rem;
+  
+  
+              .cuisine_type{
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--main-black);
+                position: relative;
+                width: max-content;
+  
+                h4{
+                  color: var(--main-offwhite);
+                }
+                &::after{
+                  content:'';
+                  position: absolute;
+                  background:linear-gradient(to right, #FF5733, #FFD633); 
+                  top: 45%;
+                  right: -150%;
+                  height: 5px;
+                  width: 45px;
+                  border-radius: 1rem;
+                }
+              }
+              .name{
+                display: flex;
+                justify-content: space-between;
+                
+  
+                
+                h6{
+                  color: #FFD633;
+                  font-size: 15px;
+                }
+  
+                .flex{
+                  display: flex;
+                  font-size: 16px;
+                  font-weight: 600;
+                  align-items: flex-start;
+                  transform: translateY(5px);
+                  gap: 10px;
+                  
+                  
+                  .icon{
+                    color: green;
+                  }
+  
+                }
+              }
+  
+            }
+  
+            &:hover{
+              .info{
+                overflow: visible;
+                padding: 1rem 1.5rem;
+                height: 100%;
+  
+              }
+            }
+          }
+        }
+      }
+
+}
