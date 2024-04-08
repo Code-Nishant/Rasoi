@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 function Banner() {
 
   return (
-    <div className="banner">
+    <div className="banner container-fluid">
+
       {dataItem.map((item, key) => {
         return (
           <div className={`dataitem ${item.class}`} key={key}>

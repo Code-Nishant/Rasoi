@@ -1,11 +1,11 @@
 .banner {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 100px;
+  // margin-bottom: 30px;
   width: 75%;
-  height: 150px;
+  height: 160px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
   gap: 10px;
   background-color: var(--main-black);
@@ -16,10 +16,11 @@
                 0px 5px 20px var(--main-black),  
                 0px -5px 20px var(--main-black);
   // backdrop-filter: blur(3.5px);
+  overflow-x: scroll;
 
 
   .dataitem {
-    margin: 5px 10px;
+    margin: 5px 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,6 +33,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
       img {
         height: 100px;
         width: 100px;
@@ -47,10 +49,12 @@
             0px -1px 6px var(--main-offwhite);
         }
       }
+
       p {
         margin-bottom: 0;
         padding: 5px 0px;
       }
+
     }
   }
 }

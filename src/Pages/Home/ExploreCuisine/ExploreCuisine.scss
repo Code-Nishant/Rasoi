@@ -1,8 +1,13 @@
 .exploreCuisine {
-  margin-top: 40px;
-  margin-left: 260px;
-  margin-right: 0px;
-  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 100px;
+  // margin-left: 260px;
+  // margin-right: 0px;
+  align-self: flex-end;
+  width: 70%;
+
+  padding: 20px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -15,20 +20,22 @@
     display: flex;
     flex-direction: row;
     color: var(--main-back);
+    align-items: center;
 
     .image {
-      padding-right: 200px;
+      padding-right: 100px;
+      padding-left: 100px;
       padding-top: 50px;
       padding-bottom: 50px;
 
       img {
-        height: 300px;
-        width: 350px;
+        height: 270px;
+          width: 300px;
       }
     }
 
     .main {
-      padding-left: 200px;
+      // padding-left: 200px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -39,7 +46,7 @@
       }
 
       .description {
-        margin-right: 100px;
+        // margin-right: 100px;
 
         p {
           // Add any specific styling for the description text if needed
@@ -66,4 +73,53 @@
       }
     }
   }
+}
+
+
+@media screen and (max-width:1025px){
+  .exploreCuisine{
+    width: 80%;
+    
+    .inner{
+      
+      .image{
+        padding: 0 ;
+      }
+      .main{
+        margin-right: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width:768px){
+  .exploreCuisine{
+    width: 100%;
+    border-radius: 0;
+
+  .inner{
+
+    .image{
+      padding: 0;
+    }
+  }
+}
+}
+@media screen and (max-width:600px){
+  .exploreCuisine{
+  float: none;
+  align-self: center;
+  width: 100%;
+  margin: 100px 30px 0px 30px;
+
+  border-radius: 20px;
+
+.inner{
+  flex-direction: column-reverse;
+
+  .image{
+    padding: 0;
+  }
+
+}
+}
 }

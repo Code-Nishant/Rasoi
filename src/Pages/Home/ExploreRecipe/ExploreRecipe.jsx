@@ -1,6 +1,7 @@
 import React from "react";
 import "./ExploreRecipe.scss";
 import image from "./p.svg";
+import { Link } from "react-router-dom";
 
 function ExploreRecipe() {
   return (
@@ -22,7 +23,9 @@ function ExploreRecipe() {
               </p>
             </div>
             <div className="btn">
+              <Link to={'/recipes'}>
               <button className="button">Explore Now</button>
+              </Link>
             </div>
           </div>
         </div>

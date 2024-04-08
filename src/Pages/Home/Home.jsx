@@ -17,7 +17,7 @@ function Home() {
         <p className="text-center"> </p>
         
       </div> */}
-      <Banner className="container" />
+      <Banner />
       <ExploreRecipe className="explore"/>
       <ExploreCuisine />
       <RatingCard />

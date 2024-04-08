@@ -1,34 +1,46 @@
 .exploreRecipe {
-    margin-top: 40px;
-    margin-left: 0px;
-    margin-right: 260px;
-    padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+    margin-top: 100px;
+    // margin-left: 0px;
+    // margin-right: 260px;
+    float: left;
+    align-self: flex-start;
+    width: 70%;
+
+    padding: 20px;
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     background-color: rgba(255, 255, 255, 0.09);
+
+
   
     .inner {
       padding: 0;
       display: flex;
       flex-direction: row;
       color: var(--main-back);
+      align-items: center;
+     justify-content: space-around;
   
       .image {
-        padding-left: 200px;
+        padding-left: 100px;
         padding-top: 50px;
         padding-bottom: 50px;
+        padding-right: 100px;
   
         img {
-          height: 300px;
-          width: 350px;
+          height: 270px;
+          width: 300px;
         }
       }
   
       .main {
-        padding-left: 200px;
+        // padding-left: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -39,7 +51,7 @@
         }
   
         .decription {
-          margin-right: 100px;
+          // margin-right: 100px;
   
           p {
             // Add any specific styling for the description text if needed
@@ -68,3 +80,50 @@
     }
   }
   
+@media screen and (max-width:1025px){
+    .exploreRecipe{
+      width: 80%;
+      
+      .inner{
+        
+        .image{
+          padding: 0 ;
+        }
+        .main{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:768px){
+    .exploreRecipe{
+      width: 100%;
+      border-radius: 0;
+
+    .inner{
+
+      .image{
+        padding: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width:600px){
+  .exploreRecipe{
+    float: none;
+    align-self: center;
+    width: 100%;
+    margin: 100px 30px 0px 30px;
+
+    border-radius: 20px;
+
+  .inner{
+    flex-direction: column;
+
+    .image{
+      padding: 0;
+    }
+
+  }
+}
+}
