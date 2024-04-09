@@ -7,9 +7,10 @@ const APPLICATION_kEY = "637a014f03b5e2eebe7f54344af63c6c";
 const TYPE="public";
 
 
-const fetchDataFromApi=async ()=>{
+const fetchDataFromApi=async (queryStr)=>{
+    
     try {
-        const {data}=await axios.get(BASE_URL+"?type="+TYPE+"&q=monos"+"&app_id="+APPLICATION_ID+"&app_key="+APPLICATION_kEY);
+        const {data}=await axios.get(BASE_URL+"?type="+TYPE+"&app_id="+APPLICATION_ID+"&app_key="+APPLICATION_kEY+"&"+queryStr);
         // console.log(data);
         return data;
     } catch (error) {
@@ -18,3 +19,7 @@ const fetchDataFromApi=async ()=>{
     }
 }
 export default fetchDataFromApi
+
+
+// https://api.edamam.com/api/recipes/v2?type=public&app_id=46cc9b6c&app_key=637a014f03b5e2eebe7f54344af63c6c&mealType=Breakfast
+// BASE_URL+"?type="+TYPE+"&app_id="+APPLICATION_ID+"&app_key="+APPLICATION_kEY+"&mealType="....

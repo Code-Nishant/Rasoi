@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { data } from "./data";
+import { data as Data } from "./data";
 import "./Card_one.scss";
 import ShowModal from "../../Modal/ShowModal.jsx"
 import Modal from "../../Modal/Modal.jsx";
@@ -8,10 +8,25 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useDispatch, useSelector } from "react-redux";
 import { show } from "../../../store/modalSlice.js";
+import useFetch from "../../../hooks/useFetch.jsx";
 
-function CardOne() {
+function CardOne({fetch}) {
+
+  const type=fetch?.type;
+  const value=fetch?.val;
+  const queryStr=type+"="+value
+  const {data, loading,err}=useFetch(queryStr)
+  // console.log(data?.hits[0].recipe.calories)
+  // console.log(typeof arr);
+
+
+ 
+
+
   const val = useSelector(state => state.modal);
   const dispatch = useDispatch();
+
+
   const sliderRef = useRef(null); // Ref for accessing the Slider component
 
   const [slidesToShow, setSlidesToShow] = useState(4); // State to store the number of slides to show
@@ -57,14 +72,14 @@ function CardOne() {
   return (
     <div className="cardOne container" ref={sliderRef}>
       <Slider {...settings} className="slider">
-        {data.map((d, key) => (
+        {data?.hits.map((d, key) => (
           <div key={key} className="item rounded-xl">
             <div className="layer rounded-t-xl">
-              <img src={d.img} alt="" />
+              <img src={d.recipe.image} alt="" />
             </div>
             <div className="description">
-              <h4 className="text">{d.name}</h4>
-              <p>{d.description}</p>
+              <h4 className="text">{d.recipe.label}</h4>
+              {/* <p>{d.description}</p> */}
               <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
             </div>
           </div>
