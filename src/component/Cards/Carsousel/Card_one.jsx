@@ -14,12 +14,14 @@ function CardOne({fetch}) {
 
   const type=fetch?.type;
   const value=fetch?.val;
-  const queryStr=type+"="+value
-  const {data, loading,err}=useFetch(queryStr)
+  console.log(type, value);
+  // const queryStr=type+"="+value
+  // const {data, loading,err}=useFetch(queryStr)
   // console.log(data?.hits[0].recipe.calories)
   // console.log(typeof arr);
-
-
+  // useFetch("query=gulab jamun","complexSearch?")
+  const {data, loading, erroe}=useFetch("type="+value,"complexSearch?")
+  console.log(data);
  
 
 
@@ -34,7 +36,7 @@ function CardOne({fetch}) {
   useEffect(() => {
     const handleResize = () => {
       // Update the number of slides to show based on the container width
-      const containerWidth = sliderRef.current.offsetWidth;
+      const containerWidth = sliderRef.current?.offsetWidth;
       if (containerWidth < 426) {
         setSlidesToShow(1);
       } 
@@ -72,13 +74,13 @@ function CardOne({fetch}) {
   return (
     <div className="cardOne container" ref={sliderRef}>
       <Slider {...settings} className="slider">
-        {data?.hits.map((d, key) => (
+        {data?.results?.map((d, key) => (
           <div key={key} className="item rounded-xl">
             <div className="layer rounded-t-xl">
-              <img src={d.recipe.image} alt="" />
+              <img src={d.image} alt="" />
             </div>
             <div className="description">
-              <h4 className="text">{d.recipe.label}</h4>
+              <h4 className="text">{d.title}</h4>
               {/* <p>{d.description}</p> */}
               <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
             </div>

@@ -23,19 +23,19 @@ function Recipes() {
       <hr />
       <h5 className="mt-6 text-center main heading">Good Morning</h5>
       <hr />
-      <Card_one fetch={{val:"Breakfast", type:"mealType"}}/>
+      <Card_one fetch={{val:"breakfast", type:"mealType"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">It's Lunch time</h5>
       <hr />
-      <Card_one fetch={{val:"Lunch", type:"mealType"}}/>
+      <Card_one fetch={{val:"main course", type:"mealType"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">Ready for Snacks</h5>
       <hr />
-      <Card_one fetch={{val:"Snack", type:"mealType"}}/>
+      <Card_one fetch={{val:"snack", type:"mealType"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">Family time - Dinner time</h5>
       <hr />
-      <Card_one fetch={{val:"Dinner", type:"mealType"}}/>
+      <Card_one fetch={{val:"appetizer", type:"mealType"}}/>
 
     </div>
   );
