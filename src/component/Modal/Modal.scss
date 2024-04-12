@@ -8,58 +8,130 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
+  bottom: 0;
   backdrop-filter: blur(3.5px);
 }
 
 .modal-container {
-  
-
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 160vw;
-  height: 90vh;
-  max-width: 40rem; /* Maximum width */
+  width: 75vw;
+  // max-width: 48rem;
+  height: 80vh;
   padding: 2rem;
   border-radius: 0.5rem;
-  background-color: rgb(189, 189, 189, 0.8);
+  background-color: rgba(189, 189, 189, 0.8);
   z-index: 2;
 
-  h2 {
-    color: var(--main-black);
-    font-size: 2.4rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  .main_label {
+    margin-bottom: 20px;
   }
 
-  p {
-    
-    font-size: 1.4rem;
-    margin: 1rem 0 2.4rem 0;
-    line-height: 1.8rem;
-    color: var(--main-black);
-    font-weight: 400;
-  }
+  .modal_box {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // gap: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.552);
+  
 
-  .modal-btn {
+  .container-box {
+    margin: 5px;
+    border-radius: 10px;
+    width: 150px;
+    height: 20px;
+    background-color: #ccc;
+  }
+}
+  .ingredients {
+    width: 268px;
+    height: 455px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
     position: absolute;
-    bottom: 20px; /* Adjust this value as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(45deg, #ffc107, #ff9800);
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    right: 10px;
+    top: 45%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+  }
+}
 
-    &:hover {
-      background: linear-gradient(45deg, #ff9800, #ffc107);
-    }
+.modal-container h2 {
+  color: var(--main-black);
+  font-size: 2.4rem;
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.modal-container p {
+  font-size: 1.4rem;
+  margin: 1rem 0 2.4rem 0;
+  line-height: 1.8rem;
+  color: var(--main-black);
+  font-weight: 400;
+}
+
+.modal-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 92%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ffc107, #ff9800);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-btn:hover {
+  background: linear-gradient(45deg, #ff9800, #ffc107);
+}
+
+.modal_banner {
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 75px; /* Adjust height as needed */
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.552);
+
+
+  .circle-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #ffffff; /* Background color for the circle image */
+   
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-container {
+    width: 90%;
+    padding: 1rem;
   }
 }

@@ -79,11 +79,11 @@ function CardOne({fetch}) {
             <div className="layer rounded-t-xl">
               <img src={d.image} alt="" />
             </div>
-            <div className="description">
-              <h4 className="text">{d.title}</h4>
-              {/* <p>{d.description}</p> */}
-              <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
-            </div>
+              <div className="description">
+                <p className="text">{d.title}</p>
+                {/* <p>{d.description}</p> */}
+                <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
+              </div>
           </div>
         ))}
       </Slider>

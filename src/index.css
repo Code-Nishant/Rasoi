@@ -18,6 +18,8 @@
   scroll-behavior: smooth;
 
   .bttn {
+    
+    bottom: 20px;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -26,6 +28,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
+    /* bottom: 10px; */
 
     &:hover {
       background: linear-gradient(45deg, #FF9800, #FFC107); 
