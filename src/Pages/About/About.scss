@@ -13,6 +13,12 @@
     background-color: rgba(255, 255, 255, 0.09);
     gap: 40px;
 
+    img {
+        width: 250px;
+        height: 345px;
+      }
+    
+
     .right_part {
       margin-right: 100px;
       margin-left: 50px;
@@ -100,7 +106,7 @@
       }
 
       img {
-        width: 280px;
+        width: 248px;
         height: 400px;
       }
     }
@@ -109,11 +115,7 @@
     }
   }
 
-  img {
-    width: 250px;
-    height: 345px;
-  }
-
+  
   h2 {
     margin-bottom: 10px;
   }
