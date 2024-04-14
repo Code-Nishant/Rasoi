@@ -3,6 +3,8 @@ import "./SimpleRatingCard.scss"
 import { MdOutlineStarOutline } from "react-icons/md"; //empty
 import { MdOutlineStarPurple500 } from "react-icons/md"; //fill
 
+
+
 function SimpleRatingCard({item}) {
     
   return (

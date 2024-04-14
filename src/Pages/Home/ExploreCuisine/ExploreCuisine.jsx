@@ -1,6 +1,6 @@
 import React from "react";
 import "./ExploreCuisine.scss"
-import image from "./p.svg";
+import image from "../../../assets/Image/Home/cuisine.png";
 import { Link } from "react-router-dom";
 
 function ExploreCuisine() {

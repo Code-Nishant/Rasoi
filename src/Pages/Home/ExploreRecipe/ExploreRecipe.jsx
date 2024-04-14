@@ -1,6 +1,6 @@
 import React from "react";
 import "./ExploreRecipe.scss";
-import image from "./p.svg";
+import image from "../../../assets/Image/Home/recipe.png";
 import { Link } from "react-router-dom";
 
 function ExploreRecipe() {

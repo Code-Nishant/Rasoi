@@ -1,6 +1,6 @@
 import React from 'react'
 import "./TopBanner.scss"
-import path from "./p.svg"
+import path from "../../../assets/Image/Recipes/recipe_herobanner.png"
 function TopBanner() {
   return (
 
