@@ -14,7 +14,7 @@ function Recipes() {
       <hr />
       <h5 className="mt-6 text-center main heading">Trending Recipes</h5>
       <hr />
-      {/* <Card_one fetch={{val:"", type:"mealType"}}/> */}
+      <Card_one fetch={{val:"", type:"mealType"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">5-mins Recipes</h5>
       <hr />

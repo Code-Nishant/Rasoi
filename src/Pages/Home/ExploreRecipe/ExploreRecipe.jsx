@@ -17,9 +17,7 @@ function ExploreRecipe() {
             </div>
             <div className="decription">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
-                aperiam nulla, error et natus nisi ipsam laboriosam veritatis,
-                quos at consequatur sequi expedita facilis omnis!
+              Embark on a flavor-filled journey through our recipe section, where each dish is a masterpiece waiting to be savored. From sizzling sensations to sweet surprises, our recipes are crafted to ignite your passion for cooking and leave you craving more culinary adventures.
               </p>
             </div>
             <div className="btn">
