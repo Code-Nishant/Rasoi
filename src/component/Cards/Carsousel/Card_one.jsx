@@ -9,19 +9,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { useDispatch, useSelector } from "react-redux";
 import { show } from "../../../store/modalSlice.js";
 import useFetch from "../../../hooks/useFetch.jsx";
+import {set} from "../../../store/idSlice.js"
 
 function CardOne({fetch}) {
 
   const type=fetch?.type;
   const value=fetch?.val;
-  // console.log(type, value);
-  // const queryStr=type+"="+value
-  // const {data, loading,err}=useFetch(queryStr)
-  // console.log(data?.hits[0].recipe.calories)
-  // console.log(typeof arr);
-  // useFetch("query=gulab jamun","complexSearch?")
-  // const {data, loading, error}=useFetch("type="+value,"complexSearch?")
-  const {data, loading, error}=useFetch("complexSearch?",type+"="+value)
+  
+  // const {data, loading, error}=useFetch("complexSearch?",type+"="+value)
   
   // console.log(data);
  
@@ -32,9 +27,7 @@ function CardOne({fetch}) {
 
 
   const sliderRef = useRef(null); // Ref for accessing the Slider component
-
   const [slidesToShow, setSlidesToShow] = useState(4); // State to store the number of slides to show
-
   useEffect(() => {
     const handleResize = () => {
       // Update the number of slides to show based on the container width
@@ -73,34 +66,29 @@ function CardOne({fetch}) {
     slidesToScroll: 1,
   };
 
-  return (
-    <div className="cardOne container" ref={sliderRef}>
-      <Slider {...settings} className="slider">
-        {data?.results?.map((d, key) => (
-          <div key={key} className="item rounded-xl">
-            <div className="layer rounded-t-xl">
-              <img src={d.image} alt="" />
-            </div>
-              <div className="description">
-                <p className="text">{d.title}</p>
-                {/* <p>{d.description}</p> */}
-                <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
-              </div>
-          </div>
-        ))}
-      </Slider>
-      {val.value && <ShowModal />}
-    </div>
+  // const [modelId, setModelId]=useState("");
+  // const id=useSelector(state=> state.id);
+  // console.log(id);
 
+  // handling button
+  const btnHandler =(id)=>{
+    // setModelId(id);
+    // console.log(modelId);
+    dispatch(set(id))
+    dispatch(show());
+  }
+
+  return (
     // <div className="cardOne container" ref={sliderRef}>
     //   <Slider {...settings} className="slider">
-    //     {Data.map((d, key) => (
+    //     {data?.results?.map((d, key) => (
     //       <div key={key} className="item rounded-xl">
     //         <div className="layer rounded-t-xl">
-    //           <img src={d.img} alt="" />
+    //           <img src={d.image} alt="" />
     //         </div>
     //           <div className="description">
-    //             <h6 className="text">{d.name}</h6>
+    //             <p className="text">{d.title}</p>
+    //             {/* <p>{d.description}</p> */}
     //             <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
     //           </div>
     //       </div>
@@ -108,7 +96,26 @@ function CardOne({fetch}) {
     //   </Slider>
     //   {val.value && <ShowModal />}
     // </div>
+
+    <div className="cardOne container" ref={sliderRef}>
+      <Slider {...settings} className="slider">
+        {Data.map((d, key) => (
+          <div key={key} className="item rounded-xl">
+            <div className="layer rounded-t-xl">
+              <img src={d.img} alt="" />
+            </div>
+              <div className="description">
+                <h6 className="text">{d.name}</h6>
+                {/* <button className='bttn' onClick={() => dispatch(show())}>Read More</button> */}
+                <button className='bttn' onClick={()=>btnHandler(d.name)}>Read More</button>
+
+              </div>
+          </div>
+        ))}
+      </Slider>
+      {/* {val.value && <ShowModal/>} */}
+    </div>
   );
 }
 
-export default CardOne;
+export default React.memo(CardOne);

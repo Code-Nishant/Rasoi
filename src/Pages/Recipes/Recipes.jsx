@@ -2,12 +2,18 @@ import React from "react";
 import Card_one from "../../component/Cards/Carsousel/Card_one.jsx";
 import Card from "../../component/Cards/Card.jsx";
 import Gallery from "./Gallery/Gallery.jsx";
-
+import ShowModel from "../../component/Modal/ShowModal.jsx"
 import "./Recipes.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { show } from "../../store/modalSlice.js";
 
 import TopBanner from "./TopBanner/TopBanner";
 
 function Recipes() {
+
+  const val = useSelector(state => state.modal);
+  const dispatch = useDispatch();
+
   return (
     <div className="recipes">
       <TopBanner className="container-fluid" />
@@ -37,8 +43,10 @@ function Recipes() {
       <hr />
       <Card_one fetch={{val:"appetizer", type:"type"}}/>
 
+      {/* <ShowModel/> */}
+      {val.value && <ShowModel/>}
     </div>
   );
 }
 
-export default Recipes;
+export default React.memo(Recipes);

@@ -1,9 +1,14 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React from 'react';
+import { useEffect, memo } from "react";
+import { useDispatch, useSelector  } from "react-redux";
 import { hide } from "../../store/modalSlice";
 import { FaTimes } from 'react-icons/fa';
+import useFetchById from '../../hooks/useFetchById';
 
-const MyModal = ({ closeModal }) => {
+const MyModal = () => {
+  const id=useSelector(state => state.id);
+  const payload=id.value.payload
+  // console.log(id.value.payload);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -13,11 +18,15 @@ const MyModal = ({ closeModal }) => {
     };
   }, []);
 
+  const {data, loading, error}=useFetchById(payload)
+  console.log(data)
+
   return (
     <>
+      {data?.title}
       <div className="modal-wrapper" onClick={() => dispatch(hide())}></div>
       <div className="modal-container">
-
+      {/* {payload} */}
       <div className="close-button" onClick={() => dispatch(hide())}>
           <FaTimes /> 
         </div>
@@ -73,4 +82,4 @@ const MyModal = ({ closeModal }) => {
   );
 };
 
-export default MyModal;
+export default React.memo(MyModal);
