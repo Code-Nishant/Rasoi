@@ -12,6 +12,7 @@ import { CiBowlNoodles } from "react-icons/ci";
 import { GiBowlOfRice } from "react-icons/gi";
 
 import "./Cuisine.scss";
+import Card from "../../component/Cards/Card.jsx";
 
 const Cuisine = () => {
   return (
@@ -24,7 +25,7 @@ const Cuisine = () => {
           <FaBowlRice />
         </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
 
         <hr />
         <div className="item2">
@@ -32,7 +33,7 @@ const Cuisine = () => {
           <IoFastFood />
         </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
 
 
         <hr />
@@ -41,7 +42,7 @@ const Cuisine = () => {
        <FaBowlFood />
        </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
 
         <hr />
         <div className="item4">
@@ -49,7 +50,7 @@ const Cuisine = () => {
           <GiNoodles />
         </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
 
         <hr />
         <div className="item5">
@@ -57,7 +58,7 @@ const Cuisine = () => {
         <LuSalad />
         </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
 
       
         <hr />
@@ -66,7 +67,7 @@ const Cuisine = () => {
         <TbSalad />
         </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
 
 
         <hr />
@@ -75,7 +76,7 @@ const Cuisine = () => {
         <CiBowlNoodles />
         </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
 
 
         <hr />
@@ -84,7 +85,9 @@ const Cuisine = () => {
         <GiBowlOfRice />
         </div>
         <hr />
-        <Card_one />
+        {/* <Card_one /> */}
+
+        <Card />
 
       </section>
     </div>

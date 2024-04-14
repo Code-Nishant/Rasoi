@@ -21,7 +21,7 @@ function CardOne({fetch}) {
   // console.log(typeof arr);
   // useFetch("query=gulab jamun","complexSearch?")
   const {data, loading, erroe}=useFetch("type="+value,"complexSearch?")
-  console.log(data);
+  // console.log(data);
  
 
 
@@ -89,6 +89,23 @@ function CardOne({fetch}) {
       </Slider>
       {val.value && <ShowModal />}
     </div>
+
+    // <div className="cardOne container" ref={sliderRef}>
+    //   <Slider {...settings} className="slider">
+    //     {Data.map((d, key) => (
+    //       <div key={key} className="item rounded-xl">
+    //         <div className="layer rounded-t-xl">
+    //           <img src={d.img} alt="" />
+    //         </div>
+    //           <div className="description">
+    //             <h6 className="text">{d.name}</h6>
+    //             <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
+    //           </div>
+    //       </div>
+    //     ))}
+    //   </Slider>
+    //   {val.value && <ShowModal />}
+    // </div>
   );
 }
 
