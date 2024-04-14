@@ -1,0 +1,125 @@
+.about {
+  margin: 20px;
+  padding: 20px;
+
+  .top_part {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 75px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.09);
+    gap: 40px;
+
+    img {
+        width: 250px;
+        height: 345px;
+      }
+    
+
+    .right_part {
+      margin-right: 100px;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .label {
+       
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .mid_section {
+    margin-top: 55px;
+    display: flex;
+    // margin: 20px;
+    border-radius: 8px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .mission {
+      width: 400px;
+      height: 335px;
+      //   margin-right: 50px;
+
+      background-color: #01000043;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+
+      p {
+        letter-spacing: 2.5px;
+      }
+    }
+    .vision {
+      // margin-left: 150px;
+      text-align: center;
+      width: 400px;
+      height: 335px;
+      background-color: #01000043;
+      //   background-color: #f9f9f93f;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      p {
+        letter-spacing: 2.5px;
+      }
+    }
+  }
+
+  .team_section {
+    background-color: #01000043;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 75px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    .inner_team {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      .title {
+        padding-bottom: 10px;
+
+        h2{
+            
+            margin-bottom: 25px;
+        }
+      }
+      .description {
+        p {
+            max-width: 70%;
+          letter-spacing: 2.5px;
+        }
+      }
+
+      img {
+        width: 248px;
+        height: 400px;
+      }
+    }
+
+    .right_team_section {
+    }
+  }
+
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+  }
+}

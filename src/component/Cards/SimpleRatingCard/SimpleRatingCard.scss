@@ -18,6 +18,15 @@
         width: 80px;
         background-color: var(--main-offwhite);
         border-radius: 50px;
+
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50px;
+
+        }
+    
+
     }
 
     .userName {
@@ -44,12 +53,12 @@
         }
     }
     .description {
-        font-size: medium;
+        font-size:medium;
         text-align: center;
 
         p {
             margin: 0;
-            word-break: break-all;
+            // word-break: break-all;
         }
     }
 }
