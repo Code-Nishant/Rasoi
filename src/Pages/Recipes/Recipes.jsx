@@ -14,7 +14,7 @@ function Recipes() {
       <hr />
       <h5 className="mt-6 text-center main heading">Trending Recipes</h5>
       <hr />
-      <Card_one fetch={{val:"", type:"mealType"}}/>
+      <Card_one fetch={{val:"", type:"type"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">5-mins Recipes</h5>
       <hr />
@@ -23,19 +23,19 @@ function Recipes() {
       <hr />
       <h5 className="mt-6 text-center main heading">Good Morning</h5>
       <hr />
-      <Card_one fetch={{val:"breakfast", type:"mealType"}}/>
+      <Card_one fetch={{val:"breakfast", type:"type"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">It's Lunch time</h5>
       <hr />
-      <Card_one fetch={{val:"main course", type:"mealType"}}/>
+      <Card_one fetch={{val:"main course", type:"type"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">Ready for Snacks</h5>
       <hr />
-      <Card_one fetch={{val:"snack", type:"mealType"}}/>
+      <Card_one fetch={{val:"snack", type:"type"}}/>
       <hr />
       <h5 className="mt-6 text-center main heading">Family time - Dinner time</h5>
       <hr />
-      <Card_one fetch={{val:"appetizer", type:"mealType"}}/>
+      <Card_one fetch={{val:"appetizer", type:"type"}}/>
 
     </div>
   );

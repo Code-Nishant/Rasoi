@@ -1,7 +1,7 @@
 import fetchDataFromApi from "../util/api";
 import React, { useEffect, useState } from "react";
 
-const useFetch = (queryStr ,type) => {
+const useFetch = (type ,queryStr) => {
  
   //states
   const [data, setData] = useState(null);
@@ -13,7 +13,7 @@ const useFetch = (queryStr ,type) => {
     setData(null);
     setError(null);
 
-    fetchDataFromApi(queryStr,type)
+    fetchDataFromApi(type, queryStr)
       .then((res) => {
         setLoading(false);
         setData(res);

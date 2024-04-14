@@ -14,13 +14,15 @@ function CardOne({fetch}) {
 
   const type=fetch?.type;
   const value=fetch?.val;
-  console.log(type, value);
+  // console.log(type, value);
   // const queryStr=type+"="+value
   // const {data, loading,err}=useFetch(queryStr)
   // console.log(data?.hits[0].recipe.calories)
   // console.log(typeof arr);
   // useFetch("query=gulab jamun","complexSearch?")
-  const {data, loading, erroe}=useFetch("type="+value,"complexSearch?")
+  // const {data, loading, error}=useFetch("type="+value,"complexSearch?")
+  const {data, loading, error}=useFetch("complexSearch?",type+"="+value)
+  
   // console.log(data);
  
 

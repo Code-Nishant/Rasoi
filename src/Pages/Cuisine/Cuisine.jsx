@@ -25,7 +25,7 @@ const Cuisine = () => {
           <FaBowlRice />
         </div>
         <hr />
-        {/* <Card_one /> */}
+        <Card_one fetch={{val:"Indian", type:"cuisine"}}/>
 
         <hr />
         <div className="item2">
@@ -33,7 +33,7 @@ const Cuisine = () => {
           <IoFastFood />
         </div>
         <hr />
-        {/* <Card_one /> */}
+        <Card_one fetch={{val:"American", type:"cuisine"}}/>
 
 
         <hr />
@@ -42,7 +42,7 @@ const Cuisine = () => {
        <FaBowlFood />
        </div>
         <hr />
-        {/* <Card_one /> */}
+        <Card_one fetch={{val:"Asian", type:"cuisine"}}/>
 
         <hr />
         <div className="item4">
@@ -50,7 +50,7 @@ const Cuisine = () => {
           <GiNoodles />
         </div>
         <hr />
-        {/* <Card_one /> */}
+        <Card_one fetch={{val:"Chinese", type:"cuisine"}}/>
 
         <hr />
         <div className="item5">
@@ -58,7 +58,7 @@ const Cuisine = () => {
         <LuSalad />
         </div>
         <hr />
-        {/* <Card_one /> */}
+        <Card_one fetch={{val:"French", type:"cuisine"}}/>
 
       
         <hr />
@@ -67,7 +67,7 @@ const Cuisine = () => {
         <TbSalad />
         </div>
         <hr />
-        {/* <Card_one /> */}
+        <Card_one fetch={{val:"Italian", type:"cuisine"}}/>
 
 
         <hr />
@@ -76,7 +76,7 @@ const Cuisine = () => {
         <CiBowlNoodles />
         </div>
         <hr />
-        {/* <Card_one /> */}
+        <Card_one fetch={{val:"Japanese", type:"cuisine"}}/>
 
 
         <hr />
@@ -85,9 +85,7 @@ const Cuisine = () => {
         <GiBowlOfRice />
         </div>
         <hr />
-        {/* <Card_one /> */}
-
-        <Card />
+        <Card_one fetch={{val:"Mexican", type:"cuisine"}}/>
 
       </section>
     </div>
