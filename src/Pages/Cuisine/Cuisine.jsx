@@ -1,6 +1,7 @@
 import React from "react";
 import SwiperAutoplay from "./SwiperAutoplay/SwiperAutoplay.jsx";
 import Modal from "../../component/Modal/Modal.jsx";
+import ShowModel from "../../component/Modal/ShowModal.jsx"
 import Card_one from "../../component/Cards/Carsousel/Card_one.jsx";
 import { FaBowlRice } from "react-icons/fa6";
 import { IoFastFood } from "react-icons/io5";
@@ -13,8 +14,14 @@ import { GiBowlOfRice } from "react-icons/gi";
 
 import "./Cuisine.scss";
 import Card from "../../component/Cards/Card.jsx";
+import { useDispatch, useSelector } from "react-redux";
+import { show } from "../../store/modalSlice.js";
 
 const Cuisine = () => {
+
+  const val = useSelector(state => state.modal);
+  const dispatch = useDispatch();
+
   return (
     <div className="cuisine">
       <SwiperAutoplay />
@@ -88,8 +95,9 @@ const Cuisine = () => {
         <Card_one fetch={{val:"Mexican", type:"cuisine"}}/>
 
       </section>
+      {val.value && <ShowModel/>}
     </div>
   );
 };
 
-export default Cuisine;
+export default React.memo(Cuisine);
