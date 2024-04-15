@@ -4,7 +4,7 @@ import './Form.scss';
 function Form() {
     const [signIn, toggle] = useState(true);
     return (
-        <div className="container">
+        <div className="containerr">
             <div className={`signup-container ${signIn ? 'active' : ''}`}>
                 <form className="form">
                     <h1 className="title">Create Account</h1>
