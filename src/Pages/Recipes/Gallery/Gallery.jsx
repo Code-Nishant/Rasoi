@@ -41,7 +41,7 @@ const Gallery = () => {
         })}
       </div>
 
-      {val.value && <ShowModal />}
+      {/* {val.value && <ShowModal />} */}
     </div>
   );
 };

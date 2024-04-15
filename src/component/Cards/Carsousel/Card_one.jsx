@@ -16,7 +16,7 @@ function CardOne({fetch}) {
   const type=fetch?.type;
   const value=fetch?.val;
   
-  // const {data, loading, error}=useFetch("complexSearch?",type+"="+value)
+  const {data, loading, error}=useFetch("complexSearch?",type+"="+value)
   
   // console.log(data);
  
@@ -79,42 +79,41 @@ function CardOne({fetch}) {
   }
 
   return (
-    // <div className="cardOne container" ref={sliderRef}>
-    //   <Slider {...settings} className="slider">
-    //     {data?.results?.map((d, key) => (
-    //       <div key={key} className="item rounded-xl">
-    //         <div className="layer rounded-t-xl">
-    //           <img src={d.image} alt="" />
-    //         </div>
-    //           <div className="description">
-    //             <p className="text">{d.title}</p>
-    //             {/* <p>{d.description}</p> */}
-    //             <button className='bttn' onClick={() => dispatch(show())}>Read More</button>
-    //           </div>
-    //       </div>
-    //     ))}
-    //   </Slider>
-    //   {val.value && <ShowModal />}
-    // </div>
-
     <div className="cardOne container" ref={sliderRef}>
       <Slider {...settings} className="slider">
-        {Data.map((d, key) => (
+        {data?.results?.map((d, key) => (
           <div key={key} className="item rounded-xl">
             <div className="layer rounded-t-xl">
-              <img src={d.img} alt="" />
+              <img src={d.image} alt="" />
             </div>
               <div className="description">
-                <h6 className="text">{d.name}</h6>
-                {/* <button className='bttn' onClick={() => dispatch(show())}>Read More</button> */}
-                <button className='bttn' onClick={()=>btnHandler(d.name)}>Read More</button>
-
+                <p className="text">{d.title}</p>
+                {/* <p>{d.description}</p> */}
+                <button className='bttn' onClick={() => btnHandler(d.id)}>Read More</button>
               </div>
           </div>
         ))}
       </Slider>
-      {/* {val.value && <ShowModal/>} */}
+      {/* {val.value && <ShowModal />} */}
     </div>
+
+    // <div className="cardOne container" ref={sliderRef}>
+    //   <Slider {...settings} className="slider">
+    //     {Data.map((d, key) => (
+    //       <div key={key} className="item rounded-xl">
+    //         <div className="layer rounded-t-xl">
+    //           <img src={d.img} alt="" />
+    //         </div>
+    //           <div className="description">
+    //             <h6 className="text">{d.name}</h6>
+    //             {/* <button className='bttn' onClick={() => dispatch(show())}>Read More</button> */}
+    //             <button className='bttn' onClick={()=>btnHandler(d.name)}>Read More</button>
+
+    //           </div>
+    //       </div>
+    //     ))}
+    //   </Slider>
+    // </div>
   );
 }
 

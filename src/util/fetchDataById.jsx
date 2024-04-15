@@ -12,7 +12,7 @@ const fetchDataById=async (payload)=>{
     try {
       
         // console.log(payload);
-        const {data}= await axios.get(`${BASE_URL}782585/information?${apiKey}`);
+        const {data}= await axios.get(`${BASE_URL}${payload}/information?${apiKey}`);
         return data;
     } catch (error) {
         console.log(error)

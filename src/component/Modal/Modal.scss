@@ -15,18 +15,17 @@
 
 .modal-container {
   position: fixed;
-  top: 54%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 75vw;
+  width: 80vw;
   // max-width: 50rem;
-  height: 80vh;
+  height: 85vh;
   padding: 40px;
   border-radius: 0.5rem;
   background-color: rgba(189, 189, 189, 0.8);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   overflow-y: auto;
 
   .close-button {
@@ -39,81 +38,205 @@
   }
 
   .main {
-    width: 75%;
+    width: 100%;
 
     .main_label {
       h2 {
         color: var(--main-black);
-        font-size: 2.4rem;
+        font-size: x-large;
         font-family: "Lucida Sans", sans-serif;
       }
     }
-    .modal_box {
-      background-color: rgba(255, 255, 255, 0.5);
-      width: 60%;
-      height: 65px;
+    
+    .center{
       display: flex;
+      flex-direction: row;
       justify-content: center;
-      align-items: center;
-      // gap: 5px;
-      border-radius: 5px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.552);
+      padding: 10px 0; 
+      gap: 20px;
+      // align-items: center;
+      // overflow-y: scroll;
 
-      .container-box {
-        margin: 5px;
-        border-radius: 10px;
-        width: 150px;
-        height: 20px;
-        background-color: #ccc;
+      .left{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        // justify-content:flex-end;
+        // align-items: center;
+
+        .content {
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+          align-items: center;
+          justify-content: space-evenly;
+    
+          .image {
+            img {
+              // height: 270px;
+              // width: 220px;
+              // border-radius: 50%;
+              height: 320px;
+              width: 400px;
+              border-radius: 20px;
+            }
+          }
+    
+          .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 200px;
+            gap: 10px;
+    
+            .item {
+              display: flex;
+              flex-direction: row;
+              padding: 10px;
+              gap: 10px;
+              padding-bottom: 2px;
+              // border-bottom: var(--main-black) solid 3px;
+              p {
+                margin: 0;
+              }
+    
+              .icon {
+                width: 20%;
+                svg {
+                  height: 25px;
+                  width: 25px;
+                  // color: var(--main-black);
+                }
+              }
+              .des {
+                margin-left: 20px;
+                width: 80%;
+                p {
+                  margin: 0;
+                  text-align: center;
+                  font-weight: bold;
+                  color: var(--main-black);
+                }
+              }
+            }
+    
+            .veg {
+              svg {
+                padding: 1px;
+                border: var(--main-black) 1px solid;
+                color: var(--main-black);
+              }
+              .green {
+                border: green 1px solid;
+                color: green;
+              }
+              .red {
+                border: red 1px solid;
+                color: red;
+              }
+            }
+            .like {
+              svg{
+                color: var(--main-black);
+              }
+            }
+            .health {
+              svg{
+                color: var(--main-black);
+              }
+            }
+            .time {
+              svg{
+                color: var(--main-black);
+              }
+            }
+            .serving {
+              svg{
+                color: var(--main-black);
+              }
+            }
+          }
+        }
+        .summary {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+    
+          margin-top: 20px;
+          color: var(--main-black);
+    
+          h5 {
+          }
+          p {
+            margin: 0px 5px 50px 0;
+            padding: 0;
+            word-spacing: 1px;
+            color: var(--main-black);
+            font-weight: 400;
+    
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+
       }
-    }
 
-    .modal_banner {
-      margin-top: 10px;
-      width: 60%;
-      height: 85px;
-      background-color: rgba(255, 255, 255, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.552);
-      overflow-x: auto;
-
+      .right{
+        width: 30%;
+        height: 600px;
+        overflow-y: auto;
+        // overflow-y: scroll;
+        .ingredients {
+          // padding: 10px;
+          // width: 30%;
+          display: flex;
+          flex-direction: column;
+          // justify-content: center;
+          // align-items: center;
+          // padding: 10px;
+          color: var(--main-black);
       
+          .inner_ingredients {
+            
+            .ingredient{
+              margin: 20px 0;
+              .name{
+                margin: 0;
+              }
+              .quantity{
+                margin: 0;
+                padding: 0;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
     }
 
-    p {
-      // width: 70%;
-      overflow-y: auto;
-      margin: 1rem 0 2.4rem 0;
-      line-height: 1.8rem;
-      color: var(--main-black);
-      font-weight: 400;
-    }
   }
+  .cooking{
+    margin-bottom: 50px;
+    color: var(--main-black);
 
-  .ingredients {
-    padding: 10px;
-    overflow-y: auto;
-    width: 25%;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
+    .instruction{
+      ol{
 
-    .inner_ingredients {
-      background-color: #ccc;
-      border-radius: 5px;
-
-      h5 {
-        color: black;
+        li{
+          letter-spacing: 1px;
+        }
       }
     }
   }
-  ::-webkit-scrollbar {
-    display: block;
-  }
+
+  
+
+  // &::-webkit-scrollbar {
+  //   display: block;
+  // }
+
 }
 
 .modal-btn {
@@ -146,6 +269,4 @@
     width: 95%;
     padding: 1rem;
   }
-
- 
 }
