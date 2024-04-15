@@ -1,55 +1,64 @@
 import React, { useState } from "react";
-import './Form.scss';
+import "./Form.scss";
 
-function Form() {
-    const [signIn, toggle] = useState(true);
-    return (
-        <div className="containerr">
-            <div className={`signup-container ${signIn ? 'active' : ''}`}>
-                <form className="form">
-                    <h1 className="title">Create Account</h1>
-                    <input className="input" type='text' placeholder='Name' />
-                    <input className="input" type='email' placeholder='Email' />
-                    <input className="input" type='password' placeholder='Password' />
-                    <button className="button">Sign Up</button>
-                </form>
-            </div>
+const Form = () => {
+  const [isSignIn, setIsSignIn] = useState(true);
+  const [rating, setRating] = useState(0);
 
-            <div className={`signin-container ${signIn ? '' : 'active'}`}>
-                <form className="form">
-                    <h1 className="title">Sign in</h1>
-                    <input className="input" type='email' placeholder='Email' />
-                    <input className="input" type='password' placeholder='Password' />
-                    <a className="anchor" href='#'>Forgot your password?</a>
-                    <button className="button">Sign In</button>
-                </form>
-            </div>
+  const toggleForm = () => {
+    setIsSignIn(!isSignIn);
+  };
 
-            <div className={`overlay-container ${signIn ? '' : 'active'}`}>
-                <div className={`overlay ${signIn ? '' : 'active'}`}>
-                    <div className={`left-overlay-panel ${signIn ? '' : 'active'}`}>
-                        <h1 className="title">Welcome Back!</h1>
-                        <p className="paragraph">
-                            To keep connected with us please login with your personal info
-                        </p>
-                        <button className="ghost-button" onClick={() => toggle(true)}>
-                            Sign In
-                        </button>
-                    </div>
+  const handleRatingChange = (newRating) => {
+    setRating(newRating);
+  };
 
-                    <div className={`right-overlay-panel ${signIn ? '' : 'active'}`}>
-                        <h1 className="title">Hello, Friend!</h1>
-                        <p className="paragraph">
-                            Enter Your personal details and start journey with us
-                        </p>
-                        <button className="ghost-button" onClick={() => toggle(false)}>
-                            Sign Up
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Add your submission logic here
+    console.log("Rating submitted:", rating);
+    // For demo purposes, let's reset the rating
+    setRating(0);
+  };
+
+  return (
+    <div className="form-container">
+      <div className={`form-wrapper ${isSignIn ? "sign-in" : "rate-us"}`}>
+        <h2>{isSignIn ? "Get in Touch" : "Rate Us"}</h2>
+        <form onSubmit={handleSubmit}>
+          {/* Sign In Fields */}
+          {isSignIn && (
+            <>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="message" placeholder="Review" />
+              <button type="submit">Send</button>
+            </>
+          )}
+
+          {/* Rate Us Fields */}
+          {!isSignIn && (
+            <>
+              <p>How would you rate us?</p>
+              <div className="rating-stars">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <span
+                    key={star}
+                    className={star <= rating ? "active" : ""}
+                    onClick={() => handleRatingChange(star)}
+                  >
+                    ★
+                  </span>
+                ))}
+              </div>
+              <button type="submit">Submit</button>
+            </>
+          )}
+        </form>
+        <p onClick={toggleForm}>{isSignIn ? "Rate Us" : "Get in Touch"}</p>
+      </div>
+    </div>
+  );
+};
 
 export default Form;
