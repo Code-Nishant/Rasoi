@@ -14,10 +14,9 @@
     gap: 40px;
 
     img {
-        width: 250px;
-        height: 345px;
-      }
-    
+      width: 250px;
+      height: 345px;
+    }
 
     .right_part {
       margin-right: 100px;
@@ -28,7 +27,6 @@
       align-items: flex-start;
 
       .label {
-       
         padding-bottom: 20px;
       }
     }
@@ -40,7 +38,7 @@
     // margin: 20px;
     border-radius: 8px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
 
@@ -93,14 +91,13 @@
       .title {
         padding-bottom: 10px;
 
-        h2{
-            
-            margin-bottom: 25px;
+        h2 {
+          margin-bottom: 25px;
         }
       }
       .description {
         p {
-            max-width: 70%;
+          max-width: 70%;
           letter-spacing: 2.5px;
         }
       }
@@ -110,16 +107,5 @@
         height: 400px;
       }
     }
-
-    .right_team_section {
-    }
-  }
-
-  
-  h2 {
-    margin-bottom: 10px;
-  }
-
-  p {
   }
 }

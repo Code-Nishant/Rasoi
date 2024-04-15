@@ -3,6 +3,8 @@ import "./About.scss";
 import img from "../../assets/Image/Contact/01.png";
 import teamImg from "../../assets/Image/Contact/2.png";
 
+import Form from "../About/Get_in_touch/Form.jsx";
+
 function About() {
   return (
     <div className="about">
@@ -51,7 +53,7 @@ function About() {
       <div className="team_section">
         <div className="inner_team">
           <div className="title">
-            <h2>Team</h2>
+            <h2>The Team</h2>
             <div className="description">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -64,8 +66,8 @@ function About() {
             <img src={teamImg} alt="Team" />
           </div>
         </div>
-        {/* Add more team members as needed */}
       </div>
+      <Form />
     </div>
   );
 }
