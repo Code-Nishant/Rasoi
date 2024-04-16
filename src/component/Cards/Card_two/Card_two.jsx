@@ -2,7 +2,7 @@ import React from 'react'
 import { BsArrowLeftShort } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
 import { IoIosRadioButtonOn } from "react-icons/io";
-import img from "../../../assets/Image/Cuisine/Swiper/Indian,jpg"
+import img from "../../../assets/Image/Cuisine/Swiper/Indian.jpg"
 import "./Card_two.scss"
 
 
@@ -29,7 +29,7 @@ const Card_two = () => {
     <section className="card_two">
    
     <div className="secContainer">
-      <div className="secHeader flex">
+      {/* <div className="secHeader flex">
         <div className="textDiv">
           <h2 className="secTitle">Explore Cuisines</h2>
           <p>
@@ -43,7 +43,7 @@ const Card_two = () => {
           <BsArrowLeftShort className="icon leftIcon" />
           <BsArrowRightShort className="icon" />
         </div>
-      </div>
+      </div> */}
       <div className="mainContent grid">
         {Data.map((item,key) => {
           return (

@@ -23,11 +23,11 @@
 
 import axios from "axios";
 
-const BASE_URL = "https://api.spoonacular.com/recipes/";
 
-const APPLICATION_kEY_1 = "c8ba721c9c8a4f18b3deb65979d27e47";
-const APPLICATION_kEY_2="6824ed253cde42a1b69ac426dfe768a0"
-const apiKey="apiKey="+APPLICATION_kEY_2;
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+
+const APPLICATION_kEY = import.meta.env.VITE_APP_APPLICATION_kEY
+const apiKey="apiKey="+APPLICATION_kEY;
 
 
 const fetchDataFromApi=async (type, queryStr)=>{

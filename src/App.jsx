@@ -9,6 +9,7 @@ import Favourities from "./Pages/Favourites/Favourities.jsx";
 import Cuisine from "./Pages/Cuisine/Cuisine.jsx";
 import About from "./Pages/About/About.jsx";
 import PageNotFound from "./Pages/PageNotFound/PageNotFound.jsx";
+import Explore from "./Pages/Explore/Explore.jsx";
 
 import Navbar from "./component/Navbar/Navbar.jsx";
 import Footer from "./component/Footer/Footer.jsx";
@@ -29,6 +30,7 @@ function App() {
           <Route path="/cuisine" element={<Cuisine></Cuisine>}></Route>
           <Route path="/favourites"element={<Favourities></Favourities>}></Route>
           <Route path="/about" element={<About></About>}></Route>
+          <Route path="/explore/:query" element={<Explore />}/>
           <Route path="*" element={<PageNotFound></PageNotFound>} />
         </Routes>
       </div>

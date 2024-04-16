@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { dataItems } from "./data.jsx";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.scss";
 import { SiCodechef } from "react-icons/si";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,6 +10,22 @@ import { IoSearch } from "react-icons/io5";
 // import dropDown from './dropDown'
 
 function Navbar() {
+  const [inputValue, setInputValue] = useState('');
+  const navigate= useNavigate();
+
+  // Handler function for input change
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  // Handler function for form submission
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Submitted value:', inputValue);
+    navigate(`/explore/${inputValue}`)
+    setInputValue('');
+  };
+
   //state used for the decision of opening and closing of toggle navigation bar
   const [hambuggerMenu, setHambuggerMenu] = useState(false);
   
@@ -94,8 +110,10 @@ function Navbar() {
 
       {/* Search Bar */}
       <div className="search-bar">
-        <form action="/" method="GET" className="form">
-          <input type="search" placeholder="Search" className="search-field" />
+        <form onSubmit={handleSubmit} className="form">
+          <input type="text" className="search-field" value={inputValue}
+                onChange={handleInputChange}
+                placeholder="Search"/>
           <button type="submit" className="search-button">
             <IoSearch className="icon" />
           </button>
