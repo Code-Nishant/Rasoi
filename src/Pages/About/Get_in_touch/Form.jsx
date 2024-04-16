@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./Form.scss";
 
 const Form = () => {
+  //states
   const [isSignIn, setIsSignIn] = useState(true);
   const [rating, setRating] = useState(0);
 
+  //handler function
   const toggleForm = () => {
     setIsSignIn(!isSignIn);
   };
@@ -22,7 +24,7 @@ const Form = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container container">
       <div className={`form-wrapper ${isSignIn ? "sign-in" : "rate-us"}`}>
         <h2>{isSignIn ? "Get in Touch" : "Rate Us"}</h2>
         <form onSubmit={handleSubmit}>
@@ -32,10 +34,17 @@ const Form = () => {
               <input type="text" placeholder="Name" />
               <input type="email" placeholder="Email" />
               <input type="message" placeholder="Message" />
-              <button type="submit">Send</button>
+              {/* <button type="submit">Send</button>
               <button type="button" onClick={toggleForm}>
                 Rate Us
-              </button>
+              </button> */}
+
+              <div className="buttons">
+                <button type="submit">Send</button>
+                <button type="button" onClick={toggleForm}>
+                  Rate Us
+                </button>
+              </div>
             </>
           )}
 
