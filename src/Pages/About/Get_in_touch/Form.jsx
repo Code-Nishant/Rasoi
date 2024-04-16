@@ -31,15 +31,22 @@ const Form = () => {
             <>
               <input type="text" placeholder="Name" />
               <input type="email" placeholder="Email" />
-              <input type="message" placeholder="Review" />
+              <input type="message" placeholder="Message" />
               <button type="submit">Send</button>
+              <button type="button" onClick={toggleForm}>
+                Rate Us
+              </button>
             </>
           )}
 
           {/* Rate Us Fields */}
           {!isSignIn && (
             <>
-              <p>How would you rate us?</p>
+              {/* <p>How would you rate us?</p> */}
+
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="message" placeholder="Review" />
               <div className="rating-stars">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <span
@@ -51,11 +58,15 @@ const Form = () => {
                   </span>
                 ))}
               </div>
-              <button type="submit">Submit</button>
+              <div className="buttons">
+                <button type="submit">Submit</button>
+                <button type="button" onClick={toggleForm}>
+                  Get in Touch
+                </button>
+              </div>
             </>
           )}
         </form>
-        <p onClick={toggleForm}>{isSignIn ? "Rate Us" : "Get in Touch"}</p>
       </div>
     </div>
   );
