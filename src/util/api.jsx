@@ -34,7 +34,7 @@ const fetchDataFromApi=async (type, queryStr)=>{
     
     try {
         // console.log(BASE_URL+type+apiKey+"&"+"excludeIngredients=beef, bear, wine, cocktail"+"&"+queryStr);
-        // const {data}=await axios.get(BASE_URL+type+apiKey+"&"+"excludeIngredients=beef, bear, wine, cocktail"+"&"+queryStr +"&number=20");
+        const {data}=await axios.get(BASE_URL+type+apiKey+"&"+"excludeIngredients=beef, bear, wine, cocktail"+"&"+queryStr +"&number=20");
         //uppar wala code sirf uncomment kar dena
         
 

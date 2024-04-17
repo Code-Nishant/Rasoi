@@ -11,6 +11,8 @@
   .layer-1 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     .main {
       margin-right: 100px;
@@ -35,8 +37,8 @@
     .image {
       margin-left: 30px;
       img {
-        height: 362px;
-        width: 320px;
+        height: 370px;
+        width: 310px;
       }
     }
   }
@@ -80,6 +82,7 @@
     }
   }
 
+
   /* Media query for smaller screen sizes */
   @media screen and (max-width: 768px) {
     .layer-2 {
@@ -87,6 +90,41 @@
         input[type="search"] {
           width: 100%; /* Set width to 100% for smaller screens */
           max-width: 300px; /* Adjust max-width for smaller screens */
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .topBanner{
+
+    .layer-1{
+
+      .main{
+        margin-left: 10px;
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .topBanner{
+    padding: 20px;
+    .layer-1{
+      flex-direction: column;
+      gap:10px;
+      // justify-content: center;
+      .main{
+        margin-left: 10px;
+        margin-right: 0px;
+
+        .description{
+          
+          p{
+            letter-spacing: 1.0px;
+          }
         }
       }
     }

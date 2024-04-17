@@ -1,7 +1,7 @@
 import React from "react";
 import SwiperAutoplay from "./SwiperAutoplay/SwiperAutoplay.jsx";
 import Modal from "../../component/Modal/Modal.jsx";
-import ShowModel from "../../component/Modal/ShowModal.jsx"
+
 import Card_one from "../../component/Cards/Carsousel/Card_one.jsx";
 import { FaBowlRice } from "react-icons/fa6";
 import { IoFastFood } from "react-icons/io5";

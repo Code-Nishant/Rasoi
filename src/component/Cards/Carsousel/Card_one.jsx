@@ -40,10 +40,12 @@ function CardOne({fetch}) {
       }
       else if (containerWidth < 768) {
         setSlidesToShow(3);
-      } else if (containerWidth < 1026) {
+      } 
+      // else if (containerWidth < 1200) {
+      //   setSlidesToShow(4);
+      // }
+       else {
         setSlidesToShow(4);
-      } else {
-        setSlidesToShow(5);
       }
     };
 
@@ -57,7 +59,7 @@ function CardOne({fetch}) {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Empty dependency array ensures that the effect runs only once
+  }, [slidesToShow]); // Empty dependency array ensures that the effect runs only once
 
   const settings = {
     infinite: true,
@@ -79,7 +81,7 @@ function CardOne({fetch}) {
   }
 
   return (
-    <div className="cardOne container" ref={sliderRef}>
+    <div className="cardOne container-fluid" ref={sliderRef}>
       <Slider {...settings} className="slider">
         {data?.results?.map((d, key) => (
           <div key={key} className="item rounded-xl">

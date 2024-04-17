@@ -82,3 +82,36 @@
    
   }
 }
+
+@media screen and (max-width:580px) {
+    .gallery{
+        .menuItems{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .item1{
+                float:none;
+                clear: both;
+                
+            }
+            .item2{
+                float:none;
+                clear: both;
+            }
+            .item3{
+                float:none;
+                clear: both;
+            }
+            .item4{
+                float:none;
+                clear: both;
+            }
+            .menuItem{
+                flex-direction: column;
+                height: auto;
+                width: auto;
+               
+            }
+        }
+    }
+}

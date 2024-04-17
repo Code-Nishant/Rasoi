@@ -92,23 +92,23 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .slider {
-      .item {
-        height: auto;
-      }
-    }
-  }
+  // @media only screen and (max-width: 768px) {
+  //   .slider {
+  //     .item {
+  //       height: auto;
+  //     }
+  //   }
+  // }
 
-  @media only screen and (max-width: 480px) {
-    .slider {
-      .item {
-        height: auto;
-        .layer img {
-          height: 80px;
-          width: 80px;
-        }
-      }
-    }
-  }
+  // @media only screen and (max-width: 480px) {
+  //   .slider {
+  //     .item {
+  //       height: auto;
+  //       .layer img {
+  //         height: 80px;
+  //         width: 80px;
+  //       }
+  //     }
+  //   }
+  // }
 }
