@@ -1,0 +1,37 @@
+.pageNotFound{
+    margin-top: 70px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        height: 50%;
+        width: 30%;
+    }
+}
+@media screen and  (max-width:1025px) {
+    .pageNotFound{
+
+        img{
+            width: 40%;
+        }
+    }
+}
+@media screen and  (max-width:620px) {
+    .pageNotFound{
+
+        img{
+            width: 50%;
+        }
+    }
+}
+@media screen and  (max-width:426px) {
+    .pageNotFound{
+
+        img{
+            width: 55%;
+        }
+    }
+}
