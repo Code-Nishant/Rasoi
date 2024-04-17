@@ -48,4 +48,22 @@ export const dataItem=[
         class:"ice-cream",
         imagePath:"https://media.istockphoto.com/id/178510129/photo/plate-of-assorted-scooped-ice-cream-and-fresh-ingredients.jpg?s=612x612&w=0&k=20&c=YM4--hkXAjiyJ0r-IzHHXruTNWdZ2WMAsbAIAcAW98E="
     },
+    {
+        title: "Starter",
+        link: "",
+        class:"starter",
+        imagePath:"https://w7.pngwing.com/pngs/592/778/png-transparent-pizza-on-white-plate-california-style-pizza-sicilian-pizza-italian-cuisine-tarte-flambee-pizza-food-pizza-logo-pizza-delivery.png"
+    },
+    {
+        title: "Pancakes",
+        link: "",
+        class:"pancake",
+        imagePath:"https://www.thespruceeats.com/thmb/PWWRHrrsPir_OFkwLJUIVNJ9kXM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/BlueberryLemonRicottaPancakes-LeahMaroney-5c0fb000c9e77c0001e0c50b.jpg"
+    },
+    {
+        title: "Ice-Cream",
+        link: "",
+        class:"ice-cream",
+        imagePath:"https://media.istockphoto.com/id/178510129/photo/plate-of-assorted-scooped-ice-cream-and-fresh-ingredients.jpg?s=612x612&w=0&k=20&c=YM4--hkXAjiyJ0r-IzHHXruTNWdZ2WMAsbAIAcAW98E="
+    },
 ]

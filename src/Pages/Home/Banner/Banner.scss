@@ -5,6 +5,7 @@
   height: 160px;
   display: flex;
   flex-direction: row;
+  // flex-direction: column;
   justify-content:space-around;
   align-items: center;
   gap: 10px;
@@ -16,8 +17,19 @@
                 0px 5px 20px var(--main-black),  
                 0px -5px 20px var(--main-black);
   // backdrop-filter: blur(3.5px);
-  overflow-x: scroll;
 
+  // overflow-y: auto;
+  overflow-x: auto;
+  // transform: rotate(-90deg);
+  // transform-origin: right top;
+  // transform:rotate(-90deg) translateY(-100px);
+  scrollbar-color: transparent transparent;
+  user-select: none;
+
+  &::-webkit-scrollbar{
+    height: 1px;
+    background-color: transparent;
+  }
 
   .dataitem {
     margin: 5px 20px;
@@ -25,6 +37,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    // transform: rotate(90deg);
+    // transform-origin: right top;
 
     .link {
       text-decoration: none;
