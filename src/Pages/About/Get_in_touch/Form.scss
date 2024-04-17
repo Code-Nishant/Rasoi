@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  height: 100vh; /* Use full viewport height */
 
   .form-wrapper {
     background-color: rgba(255, 255, 255, 0.09);
     border-radius: 12px;
     padding: 30px;
-    width: 550px;
+    max-width: 550px; /* Set max-width for better responsiveness */
+    width: 90%; /* Set width to a percentage */
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
@@ -84,5 +85,51 @@
         text-decoration: underline;
       }
     }
+
+    .back {
+      margin-top: 20px; /* Add some margin for separation */
+      button {
+        background: linear-gradient(45deg, #ffc107, #ff9800);
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: none;
+        border-radius: 6px;
+        padding: 14px;
+        font-size: 16px;
+        width: 120px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) { /* Tablet and smaller devices */
+    .form-wrapper {
+      padding: 20px;
+      max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) { /* Mobile devices */
+    .form-wrapper {
+      padding: 10px;
+    }
   }
 }
+
+
+
+// img {
+//   width: 250px;
+//   height: 345px;
+// }
+
+
+// img {
+//   width: 248px;
+//   height: 400px;
+// }
