@@ -18,8 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { show } from "../../store/modalSlice.js";
 
 const Cuisine = () => {
-
-  const val = useSelector(state => state.modal);
+  const val = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 
   return (
@@ -32,7 +31,7 @@ const Cuisine = () => {
           <FaBowlRice />
         </div>
         <hr />
-        <Card_one fetch={{val:"Indian", type:"cuisine"}}/>
+        <Card_one fetch={{ val: "Indian", type: "cuisine" }} />
 
         <hr />
         <div className="item2">
@@ -40,16 +39,15 @@ const Cuisine = () => {
           <IoFastFood />
         </div>
         <hr />
-        <Card_one fetch={{val:"American", type:"cuisine"}}/>
-
+        <Card_one fetch={{ val: "American", type: "cuisine" }} />
 
         <hr />
-       <div className="item3">
-       <h5 className="mt-6 text-left main heading">Asian Cuisine</h5>
-       <FaBowlFood />
-       </div>
+        <div className="item3">
+          <h5 className="mt-6 text-left main heading">Asian Cuisine</h5>
+          <FaBowlFood />
+        </div>
         <hr />
-        <Card_one fetch={{val:"Asian", type:"cuisine"}}/>
+        <Card_one fetch={{ val: "Asian", type: "cuisine" }} />
 
         <hr />
         <div className="item4">
@@ -57,45 +55,41 @@ const Cuisine = () => {
           <GiNoodles />
         </div>
         <hr />
-        <Card_one fetch={{val:"Chinese", type:"cuisine"}}/>
+        <Card_one fetch={{ val: "Chinese", type: "cuisine" }} />
 
         <hr />
         <div className="item5">
-        <h5 className="mt-6 text-left main heading">French Cuisine</h5>
-        <LuSalad />
+          <h5 className="mt-6 text-left main heading">French Cuisine</h5>
+          <LuSalad />
         </div>
         <hr />
-        <Card_one fetch={{val:"French", type:"cuisine"}}/>
+        <Card_one fetch={{ val: "French", type: "cuisine" }} />
 
-      
         <hr />
         <div className="item6">
-        <h5 className="mt-6 text-left main heading">Italian Cuisine</h5>
-        <TbSalad />
+          <h5 className="mt-6 text-left main heading">Italian Cuisine</h5>
+          <TbSalad />
         </div>
         <hr />
-        <Card_one fetch={{val:"Italian", type:"cuisine"}}/>
-
+        <Card_one fetch={{ val: "Italian", type: "cuisine" }} />
 
         <hr />
         <div className="item7">
-        <h5 className="mt-6 text-left main heading">Japanese Cuisine</h5>
-        <CiBowlNoodles />
+          <h5 className="mt-6 text-left main heading">Japanese Cuisine</h5>
+          <CiBowlNoodles />
         </div>
         <hr />
-        <Card_one fetch={{val:"Japanese", type:"cuisine"}}/>
-
+        <Card_one fetch={{ val: "Japanese", type: "cuisine" }} />
 
         <hr />
         <div className="item8">
-        <h5 className="mt-6 text-left main heading">Mexican Cuisine</h5>
-        <GiBowlOfRice />
+          <h5 className="mt-6 text-left main heading">Mexican Cuisine</h5>
+          <GiBowlOfRice />
         </div>
         <hr />
-        <Card_one fetch={{val:"Mexican", type:"cuisine"}}/>
-
+        <Card_one fetch={{ val: "Mexican", type: "cuisine" }} />
       </section>
-      {val.value && <ShowModel/>}
+      {val.value && <ShowModel />}
     </div>
   );
 };
