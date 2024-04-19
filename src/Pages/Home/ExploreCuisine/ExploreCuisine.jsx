@@ -19,7 +19,7 @@ function ExploreCuisine() {
             </p>
           </div>
           <div className="btn">
-            <Link to={"/cuisine"}>
+            <Link to={"/cuisine"} preventScrollReset={false} >
             
             <button className="button">Explore Now</button>
             </Link>

@@ -48,10 +48,15 @@ function Banner() {
       {dataItem.map((item, key) => {
         return (
           <div className={`dataitem ${item.class}`} key={key}>
-            <Link className="link">
+            {/* <Link className="link" to={item.link}>
               <img src={item.imagePath} alt="image" />
               <p>{item.title}</p>
-            </Link>
+            </Link> */}
+
+            <a className="link" href={item.link}>
+              <img src={item.imagePath} alt="image" />
+              <p>{item.title}</p>
+            </a>
           </div>
         );
       })}

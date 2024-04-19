@@ -17,18 +17,18 @@ import Footer from "./component/Footer/Footer.jsx";
 function App() {
   return (
     <div className="app">
-
       <div className="navBar">
         <Navbar></Navbar>
       </div>
       
       {/* routing of pages */}
       <div className="page">
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/recipes" element={<Recipes></Recipes>}></Route>
           <Route path="/cuisine" element={<Cuisine></Cuisine>}></Route>
-          <Route path="/favourites"element={<Favourities></Favourities>}></Route>
+          <Route path="/favourites" element={<Favourities></Favourities>}></Route>
+          <Route path="/favourites/:sectionId"element={<Favourities></Favourities>}></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/explore/:query" element={<Explore />}/>
           <Route path="*" element={<PageNotFound></PageNotFound>} />
