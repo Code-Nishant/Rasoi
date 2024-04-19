@@ -34,21 +34,21 @@ export const data=[
         image: image2, 
         name:"User-5",
         star: 1,
-        des: "Every recipe a hit, making mealtime a delight.Vegetarian Chili surprised me! Hearty and flavorful, even for meat lovers.",
+        des: "Every recipe a hit, making mealtime a delight. Vegetarian Chili surprised me! Hearty and flavorful.",
         class:"card5"
     },
     {
         image: image,
         name:"User-6", 
         star: 2,
-        des: "I've been using this recipe website for a while now and it's become my go-to for meal planning. The variety of recipes ensures I never get bored, and the search function makes it easy to find exactly what I'm looking for.I've recommended this recipe website to all my friends",
+        des: "Simple steps, stunning results. Perfect for busy days.I've recommended this recipe website to all my friends and coworkers.  Keep up the great work.I stumbled upon this recipe website and I'm hooked!  Every dish I've tried has been a hit with my family.",
         class:"card6"
     },
     {
         image: image,
         name:"User-7", 
         star: 5,
-        des: "Simple steps, stunning results. Perfect for busy days.I've recommended this recipe website to all my friends and coworkers.  Keep up the great work.I stumbled upon this recipe website and I'm hooked!  Every dish I've tried has been a hit with my family.",
+        des: "I've been using this recipe website for a while now and it's become my go-to for meal planning. The variety of recipes ensures I never get bored, and the search function makes it easy to find exactly what I'm looking for.I've recommended this recipe website to all my friends",
         class:"card7"
     },
     {
