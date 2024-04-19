@@ -36,11 +36,11 @@ const fetchDataFromApi=async (type, queryStr)=>{
         // console.log(BASE_URL+type+apiKey+"&"+"excludeIngredients=beef, bear, wine, cocktail"+"&"+queryStr);
         const {data}=await axios.get(BASE_URL+type+apiKey+"&"+"excludeIngredients=beef, pork, bear, wine, cocktail"+"&"+queryStr +"&number=20");
         //uppar wala code sirf uncomment kar dena
-        
 
         return data;
     } catch (error) {
-        console.log(error)
+        // console.log(error)
+        
         return error;
     }
 }
