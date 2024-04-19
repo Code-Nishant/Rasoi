@@ -80,7 +80,7 @@
       background: linear-gradient(to right, #ff5733, #ffd633);
     }
   }
-}
+
 
 @keyframes slideInRight {
   from {
@@ -91,4 +91,35 @@
     opacity: 1;
     transform: translateX(0);
   }
+
+  
 }
+
+@media only screen and (max-width: 480px){
+  .top-banner{
+    .banner-content{
+      .banner-title{
+        font-size: 2rem;
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top-banner {
+    height: 200px;
+  }
+  .fav_body {
+    padding: 3px; 
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .fav_item {
+    font-size: 20px; 
+    margin: 5px 0; 
+  }
+}
+}
+
