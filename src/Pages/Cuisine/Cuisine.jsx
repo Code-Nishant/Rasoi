@@ -1,6 +1,6 @@
 import React from "react";
 import SwiperAutoplay from "./SwiperAutoplay/SwiperAutoplay.jsx";
-import Modal from "../../component/Modal/Modal.jsx";
+import ShowModal from "../../component/Modal/ShowModal.jsx";
 
 import Card_one from "../../component/Cards/Carsousel/Card_one.jsx";
 import { FaBowlRice } from "react-icons/fa6";
@@ -95,7 +95,7 @@ const Cuisine = () => {
         <Card_one fetch={{val:"Mexican", type:"cuisine"}}/>
 
       </section>
-      {val.value && <ShowModel/>}
+      {val.value && <ShowModal/>}
     </div>
   );
 };
