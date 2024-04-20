@@ -8,36 +8,40 @@ import img4 from "../../../assets/Image/Recipes/carousel/caprese.jpeg";
 const Menu = [
   {
     id: 1,
-    image:img1,
-    name: "Egg Bhurji",
-    description: "Egg Bhurji is a quick and flavorful Indian dish made by scrambling eggs with onions, tomatoes, green chilies, and spices.",
+    image:"https://img.spoonacular.com/recipes/661740-312x231.jpg",
+    name: "Strawberry and Banana Lassi",
+    description: "Lassi is a traditional Indian yogurt-based drink, often sweetened with sugar and flavored with cardamom or mango. Refreshing and creamy.",
     category: "Breakfast",
     dishType: "Indian",
+    refId:661740
   },
   {
     id: 2,
-    image: img2,
-    name: "Sushi Rolls",
-    description: " Sushi Rolls are a staple of Japanese cuisine,featuring vinegared rice combined with fresh,vegetables,and sometimes tropical fruits,all wrapped in seaweed sheets.Whether it's classic California rolls,spicy tuna rolls,or inventive fusion creations, sushi rolls offer a delicate balance of flavors.",
+    image: "https://img.spoonacular.com/recipes/1095817-312x231.jpg",
+    name: "Super Food Trail Mix",
+    description: "Super Food Trail Mix combines nuts, seeds, dried fruits, and dark chocolate for a nutrient-packed snack that boosts energy and health.",
     category: "Appetizer",
     dishType: "Japanese ",
+    refId:1095817,
   },
   
   {
     id: 3,
-    image: img3,
-    name: " Kimchi Fried Rice",
-    description: " Kimchi Fried Rice is a delicious Korean dish made with cooked rice stir-fried with kimchi, vegetables, and often diced meat or tofu. The kimchi adds a tangy and spicy flavor to the dish, while the rice becomes wonderfully crispy in the pan.",
+    image: "https://img.spoonacular.com/recipes/1697783-312x231.jpg",
+    name: "Tiramisu Overnight Oats",
+    description: "Tiramisu Overnight Oats blend coffee, cocoa, and mascarpone with oats for a decadent, healthy breakfast version of the classic dessert",
     category: "Main Course",
-    dishType: "Korean",
+    dishType: "Japanese",
+    refId:1697783
   },
   {
     id: 4,
-    image: img4,
-    name: "Caprese Salad",
-    description: "Caprese Salad is a classic Italian dish made with fresh tomatoes, mozzarella cheese, basil leaves, olive oil, and balsamic glaze. It's a simple yet elegant dish that showcases the flavors of summer with its vibrant colors and refreshing taste. Perfect as a light appetizer or a side dish for any meal.",
+    image: "https://img.spoonacular.com/recipes/657596-312x231.jpg",
+    name: "Quick Fix Microwave Brownie",
+    description: "Quick Fix Microwave Brownie is a fast, convenient dessert, mixing rich chocolate flavor with simple ingredients for a warm, gooey treat ready in minutes.",
     category: "Salad",
     dishType: "Italian",
+    refId: 657596
   },
 ];
 
