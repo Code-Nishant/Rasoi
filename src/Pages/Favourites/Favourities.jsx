@@ -42,7 +42,7 @@ const Favourities = () => {
 
         <hr />
         <div className="fav1" id="vegetarain">
-        <h5 className="mt-6 fav_item">Vegetarain</h5>
+        <h5 className="mt-6 fav_item">Vegetarian</h5>
         </div>
         <hr />
         <Card_one fetch={{val:"vegetarian", type:"query"}}/>
