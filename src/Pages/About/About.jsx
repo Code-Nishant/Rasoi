@@ -19,11 +19,13 @@ function About() {
           </div>
           <div className="description">
             <p>
-              We’ve organized these recipes every way we could think of so you
-              don't have to! Dietary restrictions, weeknight dinners, meal prep
-              recipes, some of our most tried-and-true… no matter how you
-              browse, we’re sure you’ll find just what you were looking for.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus molestias asperiores sit necessitatibus nostrum, iste quis iusto doloribus non explicabo. Assumenda, fugit. Aspernatur omnis veritatis laborum odio totam nihil exercitationem, perspiciatis nulla culpa accusantium ut inventore illo quia quis autem, optio magni expedita animi sequi suscipit minus enim. Nisi, in?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente molestiae impedit quos velit similique natus dolores minus ducimus ullam at molestias cupiditate tenetur aliquid, aut eaque ipsam soluta! Molestias debitis adipisci perferendis nesciunt totam soluta eveniet. Consequuntur voluptas cum natus? Nam nisi, excepturi veniam optio consequuntur fugit quae doloribus?
+              <i>Rasoi</i> , your ultimate destination for culinary inspiration,
+              exploration, and community. At <i>Rasoi</i> , we believe that food
+              has the power to bring people together, spark creativity, and
+              ignite joy. Whether you're a seasoned chef or a kitchen novice,
+              our mission is to empower you on your culinary journey by
+              providing a treasure trove of delicious recipes, helpful tips, and
+              a vibrant community of fellow food enthusiasts.Most importantly, Allrecipes connects home cooks with their greatest sources of inspiration — other home cooks. We're the world's leading digital food brand, and that inspires us to do everything possible to keep our community connected. 
             </p>
           </div>
         </div>
@@ -33,19 +35,13 @@ function About() {
         <div className="mission">
           <h2>Mission</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Temporibus, assumenda! Minima perspiciatis nostrum commodi animi
-            adipisci quia autem. Rem quod perspiciatis consectetur ut molestiae.
-           
+          Our mission at <i>Rasoi</i> is to inspire and empower individuals to explore the joy of cooking, discover new flavors, and create memorable culinary experiences. We strive to provide a platform where food enthusiasts of all skill levels can find inspiration, learn new techniques,and share their love of food with others.Through our curated collection of recipes,we aim to make cooking accessible,enjoyable,and rewarding for everyone.
           </p>
         </div>
         <div className="vision">
           <h2>Vision</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Temporibus, assumenda! Minima perspiciatis nostrum commodi animi
-            adipisci quia autem. Rem quod perspiciatis consectetur ut molestiae.
-            
+          At <i>Rasoi</i> ,our vision is to create a community where individuals are inspired and empowered to explore the joy of cooking, discover new flavors, and create unforgettable culinary experiences. We envision a world where people from all walks of life come together to celebrate the diversity of food, share their passion for cooking, and connect with others who share their love of gastronomy.
           </p>
         </div>
       </div>
@@ -58,7 +54,10 @@ function About() {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aperiam, neque enim mollitia, cumque illum fuga laborum incidunt consequuntur sed aliquam provident ipsam accusamus odit dolorum unde at et iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, aperiam, neque enim mollitia, cumque illum fuga
+                laborum incidunt consequuntur sed aliquam provident ipsam
+                accusamus odit dolorum unde at et iusto.
               </p>
             </div>
           </div>
