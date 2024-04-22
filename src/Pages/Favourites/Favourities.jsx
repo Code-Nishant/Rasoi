@@ -38,7 +38,7 @@ const Favourities = () => {
       </div>
       <div className="fav_body">
         <hr />
-        <h2>Your Favourite Dishes</h2>
+        <h2>Our Favourite Dishes</h2>
 
         <hr />
         <div className="fav1" id="vegetarain">

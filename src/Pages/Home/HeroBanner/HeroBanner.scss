@@ -47,6 +47,10 @@
 
     }
     .wrapper{
+        position: absolute;
+        bottom: 55px; /* Set to 0 to align it to the bottom of the heroBanner */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%);
         .heroBannerContent
         {
             display: flex;
@@ -120,7 +124,7 @@
                         cursor: pointer;
                         @include md{
                             width: 150px;
-                            height: 60px;
+                            height: 62px;
                             font-size: 18px;
                         } 
                     }

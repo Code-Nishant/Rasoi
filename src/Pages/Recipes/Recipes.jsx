@@ -27,7 +27,7 @@ function Recipes() {
       <Gallery />
 
       <hr />
-      <h5 className="mt-6 text-center main heading">Good Morning</h5>
+      <h5 className="mt-6 text-center main heading">Breakfast</h5>
       <hr />
       <Card_one fetch={{val:"breakfast", type:"type"}}/>
       <hr />
