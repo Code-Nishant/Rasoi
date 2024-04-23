@@ -41,7 +41,7 @@ function About() {
         <div className="vision">
           <h2>Vision</h2>
           <p>
-          At <i>Rasoi</i> ,our vision is to create a community where individuals are inspired and empowered to explore the joy of cooking, discover new flavors, and create unforgettable culinary experiences. We envision a world where people from all walks of life come together to celebrate the diversity of food, share their passion for cooking, and connect with others who share their love of gastronomy.
+          At <i>Rasoi</i>,our vision is to create a community where individuals are inspired and empowered to explore the joy of cooking, discover new flavors, and create unforgettable culinary experiences.We envision a world where people from all walks of life come together to celebrate the diversity of food,share their passion for cooking,and connect with others who share their love of gastronomy.
           </p>
         </div>
       </div>
@@ -51,14 +51,22 @@ function About() {
           <div className="title">
             <h2>The Team</h2>
             <div className="description">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit, aperiam, neque enim mollitia, cumque illum fuga
-                laborum incidunt consequuntur sed aliquam provident ipsam
-                accusamus odit dolorum unde at et iusto.
-              </p>
+            <div className="team_member">
+                <h4>Nishant Choudhary</h4>
+                <ul>
+                  <li>User interface design</li>
+                  <li>Logic building</li>
+                  <li>API integration</li>
+                </ul>
+              </div>
+              <div className="team_member">
+                <h4>Mahesmati Maharana</h4>
+                <ul>
+                <li>Frontend development</li>
+                  <li>User interface design</li>
+                  
+                </ul>
+              </div>
             </div>
           </div>
           <div className="image">

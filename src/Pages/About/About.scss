@@ -67,15 +67,18 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 75px;
-    padding: 50px;
+    // padding: 50px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
 
     .inner_team {
       display: flex;
-      flex-direction: row;
+      justify-content: space-evenly;
       gap: 30px;
+      padding-top: 45px;
+      
+      
 
       .title {
         padding-bottom: 10px;
@@ -90,34 +93,19 @@
           letter-spacing: 2.5px;
         }
       }
-
-      img {
-        width: 248px;
-        height: 400px;
+      .image {
+        
+        
+        img {
+          width: 248px;
+          height: 400px;
+        }
       }
+      
     }
   }
 }
 
-/* Media Queries for Tablet */
-// @media only screen and (max-width: 768px) {
-//   .about
-//   .top_part .right_part {
-//     margin-right: 0;
-//     margin-left: 0;
-//   }
-
-//   .about .mid_section .mission,
-//   .about .mid_section .vision {
-//     max-width: none;
-//   }
-
-//   .about .team_section .inner_team {
-//     flex-direction: row;
-//   }
-// }
-
-/* Media Queries for Mobile */
 
 @media only screen and (max-width: 769px) {
   .about {
