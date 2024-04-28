@@ -1,11 +1,11 @@
-import imgOne from "../../../assets/Image/Recipes/carousel/1083453.jpg";
+// import imgOne from "../../../assets/Image/Recipes/carousel/1083453.jpg";
 import imgTwo from "../../../assets/Image/Recipes/carousel/recipe2.jpeg";
 import imgThree from "../../../assets/Image/Recipes/carousel/recipe2.jpeg";
 import imgFour from "../../../assets/Image/Recipes/carousel/recipe2.jpeg";
 export const data = [
   {
     name: "recipeOne",
-    img: imgOne,
+    img: imgTwo,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
@@ -26,7 +26,7 @@ export const data = [
 
   {
     name: "recipeOne",
-    img: imgOne,
+    img: imgTwo,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
