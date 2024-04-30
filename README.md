@@ -1,7 +1,7 @@
 # Rasoi: React project for Recipe  
 
 ## Description
->Implement API-driven functionality and focuses on streamlining recipe discovery and fostering community interaction.
+> Implement API-driven functionality and focuses on streamlining recipe discovery and fostering community interaction.
 
 ## Tech Stack Used
 1. React Vite App
@@ -25,17 +25,17 @@
 >>npm run dev
 
 ## Design
->*[Design]()
+>[Design]()
 
 ## Image View
 1. Laptop View
-![laptop_1]()
+![laptop_1](./src/assets/Image/Readme/laptop.png)
 
 2. Tablet View
-![tab_1]()
+![tab_1](./src/assets/Image/Readme/tablet.png)
 
 3. Mobile View
-![mobile_1]()
+![mobile_1](./src/assets/Image/Readme/mobile.png)
 
 
 
